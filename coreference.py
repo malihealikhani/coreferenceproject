@@ -9,12 +9,13 @@
 #
 ################################################################################
 
-
-# XML Library
 import xml.etree.ElementTree as ET
 import sys
 import nltk
+import re
 import glob
+import os
+
 
 
 ################################################################################
@@ -33,10 +34,15 @@ def main(files):
 
     # This grabs all the .crf files from the dev folder. We can iterate through these.
     # Just using one for testing though (a8.crf)
-    files = glob.glob("./dev/*.crf")
+    files = glob.glob("dev/*.crf")
+    # for file in files:
+    #     file_path = os.path.splitext(file)[0]
+    #     file_name = os.path.basename(file_path)
+    #     response = 'responses/' + file_name + '.response'
+    #     with open(response, 'w') as f:
+    #         f.write(coreference(file))
 
-    with open('coreference.trace', 'w') as f:
-        f.write(coreference(files[3]))
+    coreference('./dev/b1.crf')
 
 
 ##################################################################################
@@ -65,12 +71,26 @@ def coreference(f):
     pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
     tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$']
     nouns = [noun for noun in pos_tags if noun[1] in tags]  # just the nouns, pronouns
+    grammar = r'''
+        NP: {(<NN><IN>)?<DT|PP$>?<JJ.*>*<NN.*>+<POS>?<NN.*>*}
+            {<NN.+>+}
+            {<PRP>}
+    '''
+    cp = nltk.RegexpParser(grammar)
+    chunked = cp.parse(pos_tags)
+    print chunked
 
     # check exact match in other corefs
     coref = checkExactMatch(coref)
 
     # check acronyms
     coref = checkAcronym(coref)
+
+
+    cnt = 0
+    for tag in coref:
+        if len(tag) is 3:
+            cnt += 1
 
     # check head noun match
     # check substring and partial match
@@ -87,7 +107,7 @@ def coreference(f):
     # sytactic heuristics
     # semantic compatability
 
-    return "This needs to be updated\n"
+    return str(float(cnt)/float(len(coref)))
 
 
 def create_coref(root):
