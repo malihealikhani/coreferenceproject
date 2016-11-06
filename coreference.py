@@ -69,6 +69,10 @@ def coreference(f):
     text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
     sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
     pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
+<<<<<<< HEAD
+=======
+    #Added WP (Wh-pronoun), WP$ (Possessive wh-pronoun)
+>>>>>>> origin/master
     tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
     nouns = [noun for noun in pos_tags if noun[1] in tags]  # just the nouns, pronouns
     grammar = r'''
