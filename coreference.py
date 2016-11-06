@@ -69,12 +69,13 @@ def coreference(f):
     text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
     sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
     pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
-    tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$']
+    tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
     nouns = [noun for noun in pos_tags if noun[1] in tags]  # just the nouns, pronouns
     grammar = r'''
         NP: {(<NN><IN>)?<DT|PP$>?<JJ.*>*<NN.*>+<POS>?<NN.*>*}
             {<NN.+>+}
             {<PRP>}
+            {<WP|WP$>}
     '''
     cp = nltk.RegexpParser(grammar)
     chunked = cp.parse(pos_tags)
@@ -85,7 +86,6 @@ def coreference(f):
 
     # check acronyms
     coref = checkAcronym(coref)
-
 
     cnt = 0
     for tag in coref:
@@ -136,23 +136,27 @@ def checkExactMatch(coref):
 
 
 def checkAcronym(coref):
+    skip = ["and","or","in","of","&"]
     for i in range(len(coref)):
         if len(coref[i]) is 2:
-            acr = ""
+            acr1 = ""
+            acr2 = ""
             # This finds references from acronyms (FAA finds Federal Aviation Administration)
             if len(coref[i][1].split(" ")) is 1:
                 for j in range(i, -1, -1):
                     if len(coref[j][1].split(" ")) is len(coref[i][1]):
                         for word in coref[j][1].split():
-                            acr += word[0]
-                        if acr is coref[i][1]:
+                            if word.lower() not in skip:
+                                acr1 += word[0]
+                            acr2 += word[0]
+                        if acr1 is coref[i][1] or acr2 is coref[i][1]:
                             coref[i].append(coref[j][0])
             # This finds acronyms from references (Federal Aviation Administration finds FAA)
             else:
                 for word in coref[i][1].split():
-                    acr += word[0]
+                    acr1 += word[0]
                 for j in range(i, -1, -1):
-                    if coref[j][1] is acr:
+                    if coref[j][1] is acr1:
                         coref[i].append(coref[j][0])
     return coref
 
