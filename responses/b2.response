@@ -1,1 +1,42 @@
-0.35
+<TXT>
+<COREF ID="5">american airlines unit</COREF>
+<COREF ID="6">it</COREF>
+<COREF ID="7">federal mediation</COREF>
+<COREF ID="14">the company</COREF>
+<COREF ID="15">american</COREF>
+<COREF ID="17">mediation</COREF>
+<COREF ID="18">the pilots</COREF>
+<COREF ID="19">flight attendants</COREF>
+<COREF ID="24" REF="6">it</COREF>
+<COREF ID="25">patt gibbs</COREF>
+<COREF ID="26">president of the association</COREF>
+<COREF ID="29">the call for mediation</COREF>
+<COREF ID="33">a two-tier wage scale</COREF>
+<COREF ID="34" REF="15">american</COREF>
+<COREF ID="36" REF="14">the company</COREF>
+<COREF ID="37">the negotiations</COREF>
+<COREF ID="38">the two sides</COREF>
+<COREF ID="39">that</COREF>
+<COREF ID="40" REF="36">the company</COREF>
+<COREF ID="41">the union</COREF>
+<COREF ID="42">ms. gibbs</COREF>
+<COREF ID="43" REF="40">the company</COREF>
+<COREF ID="44">her union</COREF>
+<COREF ID="46">its</COREF>
+<COREF ID="47" REF="34">american</COREF>
+<COREF ID="48" REF="43">the company</COREF>
+<COREF ID="49">union</COREF>
+<COREF ID="50">a corporate campaign</COREF>
+<COREF ID="51">she</COREF>
+<COREF ID="52">her members</COREF>
+<COREF ID="54" REF="24">it</COREF>
+<COREF ID="55">our women</COREF>
+<COREF ID="56" REF="41">the union</COREF>
+<COREF ID="57" REF="51">she</COREF>
+<COREF ID="58" REF="56">the union</COREF>
+<COREF ID="59" REF="46">its</COREF>
+<COREF ID="60" REF="48">the company</COREF>
+<COREF ID="61">the new york labor consultant</COREF>
+<COREF ID="63" REF="60">the company</COREF>
+<COREF ID="64">rogers</COREF>
+</TXT>

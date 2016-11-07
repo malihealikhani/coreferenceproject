@@ -1,1 +1,58 @@
-0.321428571429
+<TXT>
+<COREF ID="1">grounded-jets</COREF>
+<COREF ID="2">f-14's</COREF>
+<COREF ID="3">navy</COREF>
+<COREF ID="4">its</COREF>
+<COREF ID="6">the third ``tomcat'' crash in a month</COREF>
+<COREF ID="8">the second in a week</COREF>
+<COREF ID="10" REF="3">navy</COREF>
+<COREF ID="11">they</COREF>
+<COREF ID="12">the aircraft</COREF>
+<COREF ID="13" REF="10">navy</COREF>
+<COREF ID="14">both men</COREF>
+<COREF ID="15" REF="13">navy</COREF>
+<COREF ID="16">the crash</COREF>
+<COREF ID="17">thursday</COREF>
+<COREF ID="18">the third tomcat crash</COREF>
+<COREF ID="22" REF="15">navy</COREF>
+<COREF ID="23" REF="12">the aircraft</COREF>
+<COREF ID="24">a procedure the military uses to conduct an intensive review</COREF>
+<COREF ID="25">this three-day period</COREF>
+<COREF ID="27">f-14s</COREF>
+<COREF ID="28" REF="22">navy</COREF>
+<COREF ID="29">the aircraft carrier</COREF>
+<COREF ID="30">carrier</COREF>
+<COREF ID="33">bacon</COREF>
+<COREF ID="34">the stand-down</COREF>
+<COREF ID="35">the f-14s</COREF>
+<COREF ID="36">the chief of naval operations</COREF>
+<COREF ID="38">the latest crash</COREF>
+<COREF ID="39" REF="17">thursday</COREF>
+<COREF ID="40">him</COREF>
+<COREF ID="41">he</COREF>
+<COREF ID="42">the standdown</COREF>
+<COREF ID="43">the entire fleet of more than 300 aircraft</COREF>
+<COREF ID="45" REF="33">bacon</COREF>
+<COREF ID="46" REF="28">navy</COREF>
+<COREF ID="47">these accidents</COREF>
+<COREF ID="48" REF="45">bacon</COREF>
+<COREF ID="50">lt. kara hultgren</COREF>
+<COREF ID="51" REF="46">navy</COREF>
+<COREF ID="52">the tomcat</COREF>
+<COREF ID="53">a $38 million, twin-engine aircraft</COREF>
+<COREF ID="54">the standard fighter plane</COREF>
+<COREF ID="56" REF="23">the aircraft</COREF>
+<COREF ID="58">the f-14a</COREF>
+<COREF ID="59">the f-14</COREF>
+<COREF ID="60">then</COREF>
+<COREF ID="61" REF="48">bacon</COREF>
+<COREF ID="62" REF="51">navy</COREF>
+<COREF ID="63">f-14</COREF>
+<COREF ID="64" REF="62">navy</COREF>
+<COREF ID="65">me</COREF>
+<COREF ID="66" REF="11">they</COREF>
+<COREF ID="67" REF="47">these accidents</COREF>
+<COREF ID="68" REF="61">bacon</COREF>
+<COREF ID="69">a mystery</COREF>
+<COREF ID="70">02-22-96</COREF>
+</TXT>

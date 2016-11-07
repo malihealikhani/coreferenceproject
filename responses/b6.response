@@ -1,1 +1,14 @@
-0.166666666667
+<TXT>
+<COREF ID="1">national broadcasting co.</COREF>
+<COREF ID="3">the network</COREF>
+<COREF ID="4">its latest contract offer</COREF>
+<COREF ID="6">union</COREF>
+<COREF ID="9">about a third of the company's work force</COREF>
+<COREF ID="11">we</COREF>
+<COREF ID="12">a spokesman</COREF>
+<COREF ID="15">a strike</COREF>
+<COREF ID="16">nbc</COREF>
+<COREF ID="17">the union</COREF>
+<COREF ID="18" REF="17">the union</COREF>
+<COREF ID="19" REF="16">nbc</COREF>
+</TXT>

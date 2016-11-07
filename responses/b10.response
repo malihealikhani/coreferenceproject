@@ -1,1 +1,20 @@
-0.222222222222
+<TXT>
+<COREF ID="1">a federal mediator</COREF>
+<COREF ID="2">new york stock exchange</COREF>
+<COREF ID="3">clerical and operations staff members</COREF>
+<COREF ID="4">union</COREF>
+<COREF ID="5">the mediator</COREF>
+<COREF ID="7">talks</COREF>
+<COREF ID="8">the spokesman</COREF>
+<COREF ID="9">the exchange</COREF>
+<COREF ID="10">the workers</COREF>
+<COREF ID="11">members of the office and professional employees international union local 153</COREF>
+<COREF ID="12" REF="9">the exchange</COREF>
+<COREF ID="13" REF="12">the exchange</COREF>
+<COREF ID="14">the big board</COREF>
+<COREF ID="15">a unit of the big board</COREF>
+<COREF ID="17">the union</COREF>
+<COREF ID="18">federal mediation and conciliation service</COREF>
+<COREF ID="19" REF="17">the union</COREF>
+<COREF ID="20" REF="19">the union</COREF>
+</TXT>
