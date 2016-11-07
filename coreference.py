@@ -101,6 +101,9 @@ def coreference(f):
     # check partial match
     coref = checkPartialMatch(coref)
 
+    #add default coref
+    coref = addDefault(coref)
+    
     cnt = 0
     for tag in coref:
         if len(tag) is 3:
@@ -176,6 +179,13 @@ def checkAcronym(coref):
                         coref[i].append(coref[j][0])
     return coref
 
+def addDefault(coref):
+    for i in range(len(coref)):
+        if i > 1:
+            if len(coref[i]) is 2:
+                j = coref[i-1][0]
+                coref[i].append(j)
+    return coref
 
 def checkPartialMatch(coref):
     from nltk.corpus import stopwords
