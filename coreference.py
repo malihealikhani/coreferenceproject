@@ -97,6 +97,9 @@ def coreference(f):
 
     # check acronyms
     coref = checkAcronym(coref)
+    
+    # check partial match
+    coref = checkPartialMatch(coref)
 
     cnt = 0
     for tag in coref:
@@ -171,6 +174,31 @@ def checkAcronym(coref):
                 for j in range(i, -1, -1):
                     if coref[j][1] is acr1 or coref[j][1] is acr2:
                         coref[i].append(coref[j][0])
+    return coref
+
+
+def checkPartialMatch(coref):
+    from nltk.corpus import stopwords
+    stopwords = stopwords.words('english')
+    for i in range(len(coref)):
+        for j in range(i, -1, -1):
+            if i != j:
+                phrase1 = coref[i][1]
+                phrase2 = coref[j][1]
+                
+                words1 = phrase1.split(" ")
+                words2 = phrase2.split(" ")
+                
+                #only proceed if at least one phrase is multiple words
+                if len(words1) > 1 or len(words2) > 1:
+                    #for each word in word1
+                    for word1 in words1:
+                        #only proceed if word is not a stopword
+                        if not(word1 in stopwords):
+                            for word2 in words2:
+                                if word1 == word2:
+                                    if len(coref[i]) is 2:
+                                        coref[i].append(coref[j][0])
     return coref
 
 
