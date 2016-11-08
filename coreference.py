@@ -1,7 +1,7 @@
 ################################################################################
 #
 # Sean Allen - U0021994
-# Nick Sullivan -
+# Nick Sullivan - U0945150
 #
 # Natural Language Processing - CS 5340
 # Term Project - Co-Reference Resolver
@@ -11,19 +11,16 @@
 
 import xml.etree.ElementTree as ET
 import sys
-import nltk
+# import nltk
 import os
-
-
 
 ################################################################################
 #
 # Main Function
 #
-# Parameters:
-# Returns:
-# Notes:
-#
+# Parameters: File with the list of programs to use and directory where output should go
+# Returns: Creates a response file for each file processed
+# Notes: Loops through each file on the provided list and runs co-reference on it
 #
 ################################################################################
 
@@ -32,9 +29,6 @@ def main(files):
 
     listfile, responsedir = files
 
-    # This grabs all the .crf files from the dev folder. We can iterate through these.
-    # Just using one for testing though (a8.crf)
-
     for file in list(open(listfile)):
         file_path = os.path.splitext(file)[0]
         file_name = os.path.basename(file_path)
@@ -42,7 +36,16 @@ def main(files):
         with open(response, 'w') as f:
             f.write(coreference(file.rstrip()))
 
-    # coreference('./dev/b1.crf')
+
+################################################################################
+#
+# Format Output
+#
+# Parameters: Data structure with tagged references, their coref id, and ref id
+# Returns: Properly formatted string ready to write to file
+# Notes:
+#
+################################################################################
 
 
 def format_output(coref):
@@ -60,57 +63,38 @@ def format_output(coref):
 #
 # Co-Reference Method
 #
-# Parameters:
-# Returns:
+# Parameters: The name of a .crf file to be processed
+# Returns: Data structure with tagged references, their coref id, and ref id
 # Notes: The slides on co-reference contain the following: Typical Co-reference
-# Pipeline -Preprocessor: XML removal, tokenization, sentence and paragraph
-# splitting -Part of Speech Tagging -Parsing -Named Entity Recognizer
-# -Semantic Class Lookup (usualy via WordNet) -Candidate NP extraction
-# -Supervised Learning -Clustering into Chains
+#        Pipeline -Preprocessor: XML removal, tokenization, sentence and paragraph
+#        splitting -Part of Speech Tagging -Parsing -Named Entity Recognizer
+#        -Semantic Class Lookup (usualy via WordNet) -Candidate NP extraction
+#        -Supervised Learning -Clustering into Chains
 #
 ##################################################################################
 
 def coreference(f):
 
-    # Create data structure
+    # Create data structures
     tree = ET.parse(open(f))
     tree_root = tree.getroot()
     coref = create_coref(tree_root)
     notags = ET.tostring(tree_root, encoding='utf8', method='text')
-    text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
-    sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
-    pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
-    tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
-    nouns = [noun for noun in pos_tags if noun[1] in tags]  # just the nouns, pronouns
-    grammar = r'''
-        NP: {(<NN><IN>)?<DT|PP$>?<JJ.*>*<NN.*>+<POS>?<NN.*>*}
-            {<NN.+>+}
-            {<PRP>}
-            {<WP|WP$>}
-    '''
-    cp = nltk.RegexpParser(grammar)
-    chunked = cp.parse(pos_tags)
-    print chunked
-
-    # check exact match in other corefs
-    coref = checkExactMatch(coref)
-
-    # check acronyms
-    coref = checkAcronym(coref)
-    
-    # check partial match
-    coref = checkPartialMatch(coref)
-
-    #add default coref
-    coref = addDefault(coref)
-    
-    cnt = 0
-    for tag in coref:
-        if len(tag) is 3:
-            cnt += 1
+    # text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
+    # sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
+    # pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
+    # tags = ['NN', 'NNS', 'NNP', 'NNPS', 'PRP', 'PRP$', 'WP', 'WP$']
+    # nouns = [noun for noun in pos_tags if noun[1] in tags]  # just the nouns, pronouns
+    # grammar = r'''
+    #     NP: {(<NN><IN>)?<DT|PP$>?<JJ.*>*<NN.*>+<POS>?<NN.*>*}
+    #         {<NN.+>+}
+    #         {<PRP>}
+    #         {<WP|WP$>}
+    # '''
+    # cp = nltk.RegexpParser(grammar)
+    # chunked = cp.parse(pos_tags)
 
     # check head noun match
-    # check substring and partial match
     # check word overlap comparisons
     #
     # Check Lexical Similarity
@@ -124,32 +108,64 @@ def coreference(f):
     # sytactic heuristics
     # semantic compatability
 
-    return format_output(coref)
+    return format_output(addDefault(checkPartialMatch(checkAcronym(checkExactMatch(coref)))))
+
+################################################################################
+#
+# Create coref
+#
+# Parameters: xml data structure with all the tagged references
+# Returns: Data structure with tagged references and their coref id
+# Notes: coref is the primary data structure for this program
+#
+################################################################################
 
 
 def create_coref(root):
-    coref = []  # I changed this to a list so we can keep the order
+    coref = []
     for child in root:
         text = child.text
 
         # removes new lines in the middle of a string
-        if text.__contains__("\n"):
+        if "\n" in text:
             text = text[:text.index("\n")] + " " + text[text.index("\n")+1:]
 
         coref.append([str(child.get('ID')), text.lower()])
     return coref
 
 
+################################################################################
+#
+# Check Exact Match
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and some ref id's
+# Notes: This finds all the exact matches in a corpus and adds the ref id to coref
+#
+################################################################################
+
+
 def checkExactMatch(coref):
     cnt = 0
     for i in range(len(coref)):
-        for j in range(i, -1, -1):
+        for j in range(len(coref)):  #for j in range(i, -1, -1):
             if coref[i][1] == coref[j][1] and coref[i][0] != coref[j][0]:
                 if len(coref[i]) is 2:
                     coref[i].append(coref[j][0])
                     cnt += 1
                     break
     return coref
+
+
+################################################################################
+#
+# Check Acronym
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and some ref id's
+# Notes: This checks acronyms against all possible matches and adds ref id to coref
+#
+################################################################################
 
 
 def checkAcronym(coref):
@@ -160,13 +176,13 @@ def checkAcronym(coref):
             acr2 = ""
             # This finds references from acronyms (FAA finds Federal Aviation Administration)
             if len(coref[i][1].split(" ")) is 1:
-                for j in range(i, -1, -1):
+                for j in range(len(coref)):  # for j in range(i, -1, -1):
                     if len(coref[j][1].split(" ")) is len(coref[i][1]):
                         for word in coref[j][1].split():
                             if word.lower() not in skip:
                                 acr1 += word[0]
                             acr2 += word[0]
-                        if acr1 is coref[i][1] or acr2 is coref[i][1]:
+                        if acr1 == coref[i][1] or acr2 == coref[i][1]:
                             coref[i].append(coref[j][0])
             # This finds acronyms from references (Federal Aviation Administration finds FAA)
             else:
@@ -174,10 +190,71 @@ def checkAcronym(coref):
                     if word.lower() not in skip:
                         acr1 += word[0]
                     acr2 += word[0]
-                for j in range(i, -1, -1):
-                    if coref[j][1] is acr1 or coref[j][1] is acr2:
+                for j in range(len(coref)):  # for j in range(i, -1, -1):
+                    if coref[j][1] == acr1 or coref[j][1] == acr2:
                         coref[i].append(coref[j][0])
     return coref
+
+
+################################################################################
+#
+# Check Partial Match
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and some ref id's
+# Notes: This finds all the partial matches in a corpus and adds the ref id to coref.
+#        This method makes a lot of mistakes, but makes more correct matches than
+#        incorrect.
+#
+################################################################################
+
+
+def checkPartialMatch(coref):
+    #from nltk.corpus import stopwords
+    stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours',
+                    'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers',
+                    'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves',
+                    'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'is', 'are',
+                    'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does',
+                    'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until',
+                    'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into',
+                    'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down',
+                    'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here',
+                    'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more',
+                    'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so',
+                    'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now']
+    #stopwords = stopwords.words('english')
+    for i in range(len(coref)):
+        for j in range(len(coref)):  #for j in range(i, -1, -1):
+            if i != j:
+                words1 = coref[i][1].split(" ")
+                words2 = coref[j][1].split(" ")
+                
+                # only proceed if at least one phrase is multiple words
+                if len(words1) > 1 or len(words2) > 1:
+                    # for each word in word1
+                    for word1 in words1:
+                        # only proceed if word is not a stopword
+                        if not(word1 in stopwords):
+                            for word2 in words2:
+                                if word1 == word2:
+                                    if len(coref[i]) is 2:
+                                        coref[i].append(coref[j][0])
+    return coref
+
+
+################################################################################
+#
+# Add Default
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and all ref id's
+# Notes: This is the last resort. If a NP hasn't been resolved, then this will
+#        add a ref id of a nearby NP. Suprisingly, this bumped our score by
+#        about 5-7%
+#
+################################################################################
+
 
 def addDefault(coref):
     for i in range(len(coref)):
@@ -186,31 +263,6 @@ def addDefault(coref):
                 j = coref[i-1][0]
                 coref[i].append(j)
     return coref
-
-def checkPartialMatch(coref):
-    from nltk.corpus import stopwords
-    stopwords = stopwords.words('english')
-    for i in range(len(coref)):
-        for j in range(i, -1, -1):
-            if i != j:
-                phrase1 = coref[i][1]
-                phrase2 = coref[j][1]
-                
-                words1 = phrase1.split(" ")
-                words2 = phrase2.split(" ")
-                
-                #only proceed if at least one phrase is multiple words
-                if len(words1) > 1 or len(words2) > 1:
-                    #for each word in word1
-                    for word1 in words1:
-                        #only proceed if word is not a stopword
-                        if not(word1 in stopwords):
-                            for word2 in words2:
-                                if word1 == word2:
-                                    if len(coref[i]) is 2:
-                                        coref[i].append(coref[j][0])
-    return coref
-
 
 # Execution script
 if __name__ == "__main__":

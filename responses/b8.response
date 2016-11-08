@@ -1,93 +1,93 @@
 <TXT>
-<COREF ID="4">the company</COREF>
-<COREF ID="5">it</COREF>
-<COREF ID="6">a new contract offer</COREF>
-<COREF ID="9">negotiations</COREF>
-<COREF ID="10">yesterday</COREF>
-<COREF ID="11">the day</COREF>
-<COREF ID="12">their</COREF>
-<COREF ID="13">union</COREF>
+<COREF ID="4" REF="91">the company</COREF>
+<COREF ID="5" REF="92">it</COREF>
+<COREF ID="6" REF="29">a new contract offer</COREF>
+<COREF ID="9" REF="14">negotiations</COREF>
+<COREF ID="10" REF="38">yesterday</COREF>
+<COREF ID="11" REF="10">the day</COREF>
+<COREF ID="12" REF="11">their</COREF>
+<COREF ID="13" REF="15">union</COREF>
 <COREF ID="14" REF="9">negotiations</COREF>
 <COREF ID="15" REF="13">union</COREF>
-<COREF ID="16">a settlement</COREF>
-<COREF ID="18">the 57-year-old union leader</COREF>
-<COREF ID="20">mr. bieber</COREF>
-<COREF ID="21">the source</COREF>
-<COREF ID="22">he</COREF>
+<COREF ID="16" REF="15">a settlement</COREF>
+<COREF ID="18" REF="13">the 57-year-old union leader</COREF>
+<COREF ID="20" REF="23">mr. bieber</COREF>
+<COREF ID="21" REF="20">the source</COREF>
+<COREF ID="22" REF="28">he</COREF>
 <COREF ID="23" REF="20">mr. bieber</COREF>
-<COREF ID="24" REF="14">negotiations</COREF>
-<COREF ID="25">uaw</COREF>
-<COREF ID="26">president of the canadian auto workers union</COREF>
+<COREF ID="24" REF="9">negotiations</COREF>
+<COREF ID="25" REF="104">uaw</COREF>
+<COREF ID="26" REF="13">president of the canadian auto workers union</COREF>
 <COREF ID="28" REF="22">he</COREF>
-<COREF ID="29">the new offer</COREF>
-<COREF ID="30">chrysler canada ltd.</COREF>
-<COREF ID="32">inflation-indexed pension payments</COREF>
-<COREF ID="34">its</COREF>
-<COREF ID="35">the talks</COREF>
-<COREF ID="36">mr. white</COREF>
-<COREF ID="37">tuesday</COREF>
+<COREF ID="29" REF="6">the new offer</COREF>
+<COREF ID="30" REF="40">chrysler canada ltd.</COREF>
+<COREF ID="32" REF="58">inflation-indexed pension payments</COREF>
+<COREF ID="34" REF="67">its</COREF>
+<COREF ID="35" REF="83">the talks</COREF>
+<COREF ID="36" REF="53">mr. white</COREF>
+<COREF ID="37" REF="41">tuesday</COREF>
 <COREF ID="38" REF="10">yesterday</COREF>
-<COREF ID="39">the union</COREF>
-<COREF ID="40">chrysler canada</COREF>
+<COREF ID="39" REF="44">the union</COREF>
+<COREF ID="40" REF="30">chrysler canada</COREF>
 <COREF ID="41" REF="37">tuesday</COREF>
-<COREF ID="42">a company</COREF>
+<COREF ID="42" REF="4">a company</COREF>
 <COREF ID="44" REF="39">the union</COREF>
-<COREF ID="45">the adjustments</COREF>
-<COREF ID="47">william fisher</COREF>
-<COREF ID="48" REF="38">yesterday</COREF>
-<COREF ID="50">we</COREF>
-<COREF ID="51">the end of the week</COREF>
-<COREF ID="52" REF="28">he</COREF>
+<COREF ID="45" REF="44">the adjustments</COREF>
+<COREF ID="47" REF="45">william fisher</COREF>
+<COREF ID="48" REF="10">yesterday</COREF>
+<COREF ID="50" REF="48">we</COREF>
+<COREF ID="51" REF="50">the end of the week</COREF>
+<COREF ID="52" REF="22">he</COREF>
 <COREF ID="53" REF="36">mr. white</COREF>
-<COREF ID="54" REF="48">yesterday</COREF>
-<COREF ID="55">about 200 local issues</COREF>
-<COREF ID="56">caw</COREF>
-<COREF ID="57">chrysler</COREF>
-<COREF ID="58">the pension issue</COREF>
-<COREF ID="60">today</COREF>
+<COREF ID="54" REF="10">yesterday</COREF>
+<COREF ID="55" REF="54">about 200 local issues</COREF>
+<COREF ID="56" REF="78">caw</COREF>
+<COREF ID="57" REF="61">chrysler</COREF>
+<COREF ID="58" REF="32">the pension issue</COREF>
+<COREF ID="60" REF="58">today</COREF>
 <COREF ID="61" REF="57">chrysler</COREF>
-<COREF ID="62">a contract</COREF>
-<COREF ID="63">this weekend</COREF>
-<COREF ID="64" REF="44">the union</COREF>
-<COREF ID="65">the striking workers</COREF>
-<COREF ID="66" REF="61">chrysler</COREF>
+<COREF ID="62" REF="6">a contract</COREF>
+<COREF ID="63" REF="62">this weekend</COREF>
+<COREF ID="64" REF="39">the union</COREF>
+<COREF ID="65" REF="26">the striking workers</COREF>
+<COREF ID="66" REF="57">chrysler</COREF>
 <COREF ID="67" REF="34">its</COREF>
-<COREF ID="68">a new pact</COREF>
-<COREF ID="69">company</COREF>
-<COREF ID="70">the canadian strike</COREF>
-<COREF ID="71" REF="66">chrysler</COREF>
-<COREF ID="73">the plant</COREF>
-<COREF ID="75">they</COREF>
-<COREF ID="76">the strike</COREF>
-<COREF ID="77">that plant</COREF>
+<COREF ID="68" REF="6">a new pact</COREF>
+<COREF ID="69" REF="4">company</COREF>
+<COREF ID="70" REF="26">the canadian strike</COREF>
+<COREF ID="71" REF="57">chrysler</COREF>
+<COREF ID="73" REF="77">the plant</COREF>
+<COREF ID="75" REF="73">they</COREF>
+<COREF ID="76" REF="70">the strike</COREF>
+<COREF ID="77" REF="73">that plant</COREF>
 <COREF ID="78" REF="56">caw</COREF>
-<COREF ID="79" REF="71">chrysler</COREF>
-<COREF ID="80">ford motor co.</COREF>
-<COREF ID="81">gm</COREF>
-<COREF ID="82">ford</COREF>
-<COREF ID="83">the chrysler talks</COREF>
-<COREF ID="85">the ford-uaw talks</COREF>
-<COREF ID="88" REF="54">yesterday</COREF>
+<COREF ID="79" REF="57">chrysler</COREF>
+<COREF ID="80" REF="82">ford motor co.</COREF>
+<COREF ID="81" REF="105">gm</COREF>
+<COREF ID="82" REF="90">ford</COREF>
+<COREF ID="83" REF="30">the chrysler talks</COREF>
+<COREF ID="85" REF="35">the ford-uaw talks</COREF>
+<COREF ID="88" REF="10">yesterday</COREF>
 <COREF ID="90" REF="82">ford</COREF>
 <COREF ID="91" REF="4">the company</COREF>
 <COREF ID="92" REF="5">it</COREF>
-<COREF ID="93" REF="67">its</COREF>
-<COREF ID="94">the job-security issue</COREF>
-<COREF ID="96" REF="90">ford</COREF>
-<COREF ID="97" REF="91">the company</COREF>
-<COREF ID="98" REF="97">the company</COREF>
-<COREF ID="99">the two sides</COREF>
-<COREF ID="101">the contract</COREF>
-<COREF ID="102">monday</COREF>
-<COREF ID="103" REF="64">the union</COREF>
+<COREF ID="93" REF="34">its</COREF>
+<COREF ID="94" REF="58">the job-security issue</COREF>
+<COREF ID="96" REF="82">ford</COREF>
+<COREF ID="97" REF="4">the company</COREF>
+<COREF ID="98" REF="4">the company</COREF>
+<COREF ID="99" REF="98">the two sides</COREF>
+<COREF ID="101" REF="6">the contract</COREF>
+<COREF ID="102" REF="106">monday</COREF>
+<COREF ID="103" REF="39">the union</COREF>
 <COREF ID="104" REF="25">uaw</COREF>
 <COREF ID="105" REF="81">gm</COREF>
 <COREF ID="106" REF="102">monday</COREF>
-<COREF ID="107">the no. 1 auto maker</COREF>
-<COREF ID="108" REF="96">ford</COREF>
-<COREF ID="109" REF="79">chrysler</COREF>
-<COREF ID="110">u.s.</COREF>
-<COREF ID="111" REF="88">yesterday</COREF>
-<COREF ID="112" REF="109">chrysler</COREF>
-<COREF ID="113" REF="108">ford</COREF>
+<COREF ID="107" REF="26">the no. 1 auto maker</COREF>
+<COREF ID="108" REF="82">ford</COREF>
+<COREF ID="109" REF="57">chrysler</COREF>
+<COREF ID="110" REF="109">u.s.</COREF>
+<COREF ID="111" REF="10">yesterday</COREF>
+<COREF ID="112" REF="57">chrysler</COREF>
+<COREF ID="113" REF="82">ford</COREF>
 </TXT>

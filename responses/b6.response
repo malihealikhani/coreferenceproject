@@ -1,14 +1,13 @@
 <TXT>
-<COREF ID="1">national broadcasting co.</COREF>
 <COREF ID="3">the network</COREF>
-<COREF ID="4">its latest contract offer</COREF>
-<COREF ID="6">union</COREF>
-<COREF ID="9">about a third of the company's work force</COREF>
-<COREF ID="11">we</COREF>
-<COREF ID="12">a spokesman</COREF>
-<COREF ID="15">a strike</COREF>
-<COREF ID="16">nbc</COREF>
-<COREF ID="17">the union</COREF>
+<COREF ID="4" REF="3">its latest contract offer</COREF>
+<COREF ID="6" REF="17">union</COREF>
+<COREF ID="9" REF="6">about a third of the company's work force</COREF>
+<COREF ID="11" REF="9">we</COREF>
+<COREF ID="12" REF="11">a spokesman</COREF>
+<COREF ID="15" REF="12">a strike</COREF>
+<COREF ID="16" REF="19">nbc</COREF>
+<COREF ID="17" REF="18">the union</COREF>
 <COREF ID="18" REF="17">the union</COREF>
 <COREF ID="19" REF="16">nbc</COREF>
 </TXT>

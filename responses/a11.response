@@ -1,61 +1,61 @@
 <TXT>
 <COREF ID="2">f14-crash</COREF>
-<COREF ID="5">u.s. navy</COREF>
-<COREF ID="6">its f-14s</COREF>
-<COREF ID="80">one of them</COREF>
-<COREF ID="10">the third crash</COREF>
-<COREF ID="11">the crash</COREF>
-<COREF ID="12">the gulf</COREF>
-<COREF ID="13">the two crewmen</COREF>
-<COREF ID="15">the navy's fleet of more than 330 f-14s</COREF>
-<COREF ID="18">adm. jeremy m. boorda</COREF>
-<COREF ID="19">the three crashes</COREF>
-<COREF ID="20">an airplane</COREF>
-<COREF ID="21">we</COREF>
-<COREF ID="22">a jinxed airplane</COREF>
-<COREF ID="23">he</COREF>
+<COREF ID="5" REF="31">u.s. navy</COREF>
+<COREF ID="6" REF="15">its f-14s</COREF>
+<COREF ID="80" REF="6">one of them</COREF>
+<COREF ID="10" REF="11">the third crash</COREF>
+<COREF ID="11" REF="69">the crash</COREF>
+<COREF ID="12" REF="64">the gulf</COREF>
+<COREF ID="13" REF="12">the two crewmen</COREF>
+<COREF ID="15" REF="6">the navy's fleet of more than 330 f-14s</COREF>
+<COREF ID="18" REF="15">adm. jeremy m. boorda</COREF>
+<COREF ID="19" REF="36">the three crashes</COREF>
+<COREF ID="20" REF="22">an airplane</COREF>
+<COREF ID="21" REF="24">we</COREF>
+<COREF ID="22" REF="20">a jinxed airplane</COREF>
+<COREF ID="23" REF="26">he</COREF>
 <COREF ID="24" REF="21">we</COREF>
-<COREF ID="25">the aircraft</COREF>
+<COREF ID="25" REF="49">the aircraft</COREF>
 <COREF ID="26" REF="23">he</COREF>
-<COREF ID="27">the three-day review</COREF>
-<COREF ID="29">the plane</COREF>
-<COREF ID="31">navy</COREF>
-<COREF ID="32" REF="24">we</COREF>
-<COREF ID="33">the admiral</COREF>
-<COREF ID="35">the shutdown</COREF>
-<COREF ID="36">the three recent crashes</COREF>
-<COREF ID="37">the fleet</COREF>
-<COREF ID="38">the planes</COREF>
-<COREF ID="39">their</COREF>
-<COREF ID="40">earlier models of the fighter</COREF>
-<COREF ID="43">they</COREF>
+<COREF ID="27" REF="26">the three-day review</COREF>
+<COREF ID="29" REF="67">the plane</COREF>
+<COREF ID="31" REF="44">navy</COREF>
+<COREF ID="32" REF="21">we</COREF>
+<COREF ID="33" REF="32">the admiral</COREF>
+<COREF ID="35" REF="33">the shutdown</COREF>
+<COREF ID="36" REF="19">the three recent crashes</COREF>
+<COREF ID="37" REF="15">the fleet</COREF>
+<COREF ID="38" REF="37">the planes</COREF>
+<COREF ID="39" REF="38">their</COREF>
+<COREF ID="40" REF="46">earlier models of the fighter</COREF>
+<COREF ID="43" REF="68">they</COREF>
 <COREF ID="44" REF="31">navy</COREF>
-<COREF ID="45">the first model</COREF>
-<COREF ID="46">a fighter</COREF>
-<COREF ID="47">its</COREF>
-<COREF ID="48" REF="44">navy</COREF>
+<COREF ID="45" REF="44">the first model</COREF>
+<COREF ID="46" REF="40">a fighter</COREF>
+<COREF ID="47" REF="46">its</COREF>
+<COREF ID="48" REF="31">navy</COREF>
 <COREF ID="49" REF="25">the aircraft</COREF>
-<COREF ID="50">the engines</COREF>
-<COREF ID="52">f-14as</COREF>
-<COREF ID="53">the f-14b and the f-14d</COREF>
-<COREF ID="54">the f-14 fleet</COREF>
-<COREF ID="55" REF="48">navy</COREF>
-<COREF ID="56">the recent spate of crashes</COREF>
-<COREF ID="57">the crashes this year</COREF>
-<COREF ID="58">f-14</COREF>
-<COREF ID="59">the fighter</COREF>
-<COREF ID="60">the f-14</COREF>
-<COREF ID="90">thursday</COREF>
-<COREF ID="62">the nimitz</COREF>
-<COREF ID="63">the persian gulf</COREF>
+<COREF ID="50" REF="49">the engines</COREF>
+<COREF ID="52" REF="50">f-14as</COREF>
+<COREF ID="53" REF="52">the f-14b and the f-14d</COREF>
+<COREF ID="54" REF="15">the f-14 fleet</COREF>
+<COREF ID="55" REF="31">navy</COREF>
+<COREF ID="56" REF="19">the recent spate of crashes</COREF>
+<COREF ID="57" REF="19">the crashes this year</COREF>
+<COREF ID="58" REF="54">f-14</COREF>
+<COREF ID="59" REF="40">the fighter</COREF>
+<COREF ID="60" REF="54">the f-14</COREF>
+<COREF ID="90" REF="60">thursday</COREF>
+<COREF ID="62" REF="90">the nimitz</COREF>
+<COREF ID="63" REF="12">the persian gulf</COREF>
 <COREF ID="64" REF="12">the gulf</COREF>
-<COREF ID="65">navy officials</COREF>
+<COREF ID="65" REF="5">navy officials</COREF>
 <COREF ID="67" REF="29">the plane</COREF>
 <COREF ID="68" REF="43">they</COREF>
 <COREF ID="69" REF="11">the crash</COREF>
-<COREF ID="70" REF="67">the plane</COREF>
-<COREF ID="71" REF="55">navy</COREF>
-<COREF ID="72" REF="70">the plane</COREF>
-<COREF ID="73">it</COREF>
-<COREF ID="74">02-22-96</COREF>
+<COREF ID="70" REF="29">the plane</COREF>
+<COREF ID="71" REF="31">navy</COREF>
+<COREF ID="72" REF="29">the plane</COREF>
+<COREF ID="73" REF="72">it</COREF>
+<COREF ID="74" REF="73">02-22-96</COREF>
 </TXT>

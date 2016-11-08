@@ -8,7 +8,7 @@ import copy
 import xml.sax
 from xml.sax.handler import ContentHandler
 
-#useful globals
+# useful globals
 VERBOSE = False
 GOLDPRONOUN = 0
 GOLDCOMMON = 0
@@ -124,8 +124,8 @@ def score(resolutions, keys):
    global GOLDPROPER
    global GOLDPRONOUN
    global GOLDCOMMON
-   correct = 0       #the total number of correctly resolved anaphora
-   pronouns = 0       #the total number of pronouns resolved correctly resolved
+   correct = 0       # the total number of correctly resolved anaphora
+   pronouns = 0       # the total number of pronouns resolved correctly resolved
    common = 0
    proper = 0
    for r in resolutions.keys():
@@ -133,8 +133,8 @@ def score(resolutions, keys):
       antecedent = resolutions[r]
       for k in keys:
          if inChain(anaphor, k):
-            #check for the easy case, the anaphor is resolved with another
-            #non-anchor anaphor.
+            # check for the easy case, the anaphor is resolved with another
+            # non-anchor anaphor.
             if antecedent.id in map(lambda x : x.id, k):
                correct += 1
                if pronounCheck(anaphor.text.lower()):
@@ -145,7 +145,7 @@ def score(resolutions, keys):
                   proper += 1
                break
             
-            #anchor antecedent case.
+            # anchor antecedent case.
             if spans(antecedent.text, k):
                correct += 1
                if pronounCheck(anaphor.text.lower()):
@@ -178,7 +178,7 @@ def main(args):
       print "-v : Verbose mode."
       sys.exit(1)
 
-   #some pronoun classes globals
+   # some pronoun classes globals
    global simplePronouns
    global personPronouns
    global neuteredPronouns

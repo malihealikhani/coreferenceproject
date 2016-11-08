@@ -1,173 +1,171 @@
 <TXT>
-<COREF ID="3">trans world airlines</COREF>
-<COREF ID="4">additional shares of usair group inc.</COREF>
-<COREF ID="6">the order</COREF>
-<COREF ID="7">usair</COREF>
-<COREF ID="8">another blow</COREF>
-<COREF ID="12">washington-based usair</COREF>
-<COREF ID="14">proposed transaction</COREF>
-<COREF ID="15">chairman of twa</COREF>
-<COREF ID="17">twa</COREF>
+<COREF ID="4" REF="7">additional shares of usair group inc.</COREF>
+<COREF ID="6" REF="4">the order</COREF>
+<COREF ID="7" REF="201">usair</COREF>
+<COREF ID="8" REF="7">another blow</COREF>
+<COREF ID="12" REF="4">washington-based usair</COREF>
+<COREF ID="14" REF="12">proposed transaction</COREF>
+<COREF ID="15" REF="17">chairman of twa</COREF>
+<COREF ID="17" REF="21">twa</COREF>
 <COREF ID="201" REF="7">usair</COREF>
-<COREF ID="20">mr. icahn</COREF>
+<COREF ID="20" REF="24">mr. icahn</COREF>
 <COREF ID="21" REF="17">twa</COREF>
-<COREF ID="22">usair's largest shareholder</COREF>
+<COREF ID="22" REF="172">usair's largest shareholder</COREF>
 <COREF ID="24" REF="20">mr. icahn</COREF>
-<COREF ID="25">the attempt</COREF>
-<COREF ID="26" REF="201">usair</COREF>
-<COREF ID="27">piedmont</COREF>
-<COREF ID="28" REF="21">twa</COREF>
-<COREF ID="29" REF="26">usair</COREF>
+<COREF ID="25" REF="24">the attempt</COREF>
+<COREF ID="26" REF="7">usair</COREF>
+<COREF ID="27" REF="30">piedmont</COREF>
+<COREF ID="28" REF="17">twa</COREF>
+<COREF ID="29" REF="7">usair</COREF>
 <COREF ID="30" REF="27">piedmont</COREF>
-<COREF ID="31">a securities analyst</COREF>
-<COREF ID="32">mr. marckesano</COREF>
-<COREF ID="33" REF="28">twa</COREF>
-<COREF ID="34" REF="24">mr. icahn</COREF>
-<COREF ID="35" REF="29">usair</COREF>
-<COREF ID="36" REF="30">piedmont</COREF>
-<COREF ID="37" REF="33">twa</COREF>
-<COREF ID="205" REF="35">usair</COREF>
-<COREF ID="40">department</COREF>
-<COREF ID="42">it</COREF>
+<COREF ID="31" REF="30">a securities analyst</COREF>
+<COREF ID="32" REF="20">mr. marckesano</COREF>
+<COREF ID="33" REF="17">twa</COREF>
+<COREF ID="34" REF="20">mr. icahn</COREF>
+<COREF ID="35" REF="7">usair</COREF>
+<COREF ID="36" REF="27">piedmont</COREF>
+<COREF ID="37" REF="17">twa</COREF>
+<COREF ID="205" REF="7">usair</COREF>
+<COREF ID="40" REF="45">department</COREF>
+<COREF ID="42" REF="43">it</COREF>
 <COREF ID="43" REF="42">it</COREF>
-<COREF ID="44">serious application</COREF>
+<COREF ID="44" REF="43">serious application</COREF>
 <COREF ID="45" REF="40">department</COREF>
-<COREF ID="46">new filing</COREF>
-<COREF ID="202" REF="205">usair</COREF>
-<COREF ID="50" REF="43">it</COREF>
-<COREF ID="51" REF="202">usair</COREF>
-<COREF ID="52" REF="37">twa</COREF>
-<COREF ID="53">tender-offer</COREF>
-<COREF ID="54" REF="51">usair</COREF>
-<COREF ID="55" REF="34">mr. icahn</COREF>
-<COREF ID="56">chairman and chief executive officer</COREF>
-<COREF ID="203" REF="54">usair</COREF>
-<COREF ID="58" REF="203">usair</COREF>
-<COREF ID="59">the filings</COREF>
-<COREF ID="60" REF="55">mr. icahn</COREF>
-<COREF ID="61">mr. colodny</COREF>
-<COREF ID="62" REF="52">twa</COREF>
-<COREF ID="63" REF="58">usair</COREF>
-<COREF ID="64" REF="62">twa</COREF>
-<COREF ID="65" REF="63">usair</COREF>
-<COREF ID="66" REF="65">usair</COREF>
-<COREF ID="67" REF="64">twa</COREF>
-<COREF ID="68" REF="66">usair</COREF>
-<COREF ID="69" REF="36">piedmont</COREF>
-<COREF ID="70" REF="60">mr. icahn</COREF>
+<COREF ID="46" REF="155">new filing</COREF>
+<COREF ID="202" REF="7">usair</COREF>
+<COREF ID="50" REF="42">it</COREF>
+<COREF ID="51" REF="7">usair</COREF>
+<COREF ID="52" REF="17">twa</COREF>
+<COREF ID="53" REF="52">tender-offer</COREF>
+<COREF ID="54" REF="7">usair</COREF>
+<COREF ID="55" REF="20">mr. icahn</COREF>
+<COREF ID="56" REF="15">chairman and chief executive officer</COREF>
+<COREF ID="203" REF="7">usair</COREF>
+<COREF ID="58" REF="7">usair</COREF>
+<COREF ID="59" REF="58">the filings</COREF>
+<COREF ID="60" REF="20">mr. icahn</COREF>
+<COREF ID="61" REF="71">mr. colodny</COREF>
+<COREF ID="62" REF="17">twa</COREF>
+<COREF ID="63" REF="7">usair</COREF>
+<COREF ID="64" REF="17">twa</COREF>
+<COREF ID="65" REF="7">usair</COREF>
+<COREF ID="66" REF="7">usair</COREF>
+<COREF ID="67" REF="17">twa</COREF>
+<COREF ID="68" REF="7">usair</COREF>
+<COREF ID="69" REF="27">piedmont</COREF>
+<COREF ID="70" REF="20">mr. icahn</COREF>
 <COREF ID="71" REF="61">mr. colodny</COREF>
-<COREF ID="72">the documents</COREF>
-<COREF ID="73" REF="70">mr. icahn</COREF>
+<COREF ID="72" REF="74">the documents</COREF>
+<COREF ID="73" REF="20">mr. icahn</COREF>
 <COREF ID="74" REF="72">the documents</COREF>
-<COREF ID="75" REF="71">mr. colodny</COREF>
-<COREF ID="78" REF="67">twa</COREF>
-<COREF ID="79" REF="73">mr. icahn</COREF>
-<COREF ID="80">he</COREF>
-<COREF ID="81" REF="79">mr. icahn</COREF>
-<COREF ID="82" REF="68">usair</COREF>
-<COREF ID="83" REF="78">twa</COREF>
-<COREF ID="84" REF="82">usair</COREF>
-<COREF ID="85" REF="81">mr. icahn</COREF>
-<COREF ID="86">twa's offer for usair</COREF>
+<COREF ID="75" REF="61">mr. colodny</COREF>
+<COREF ID="78" REF="17">twa</COREF>
+<COREF ID="79" REF="20">mr. icahn</COREF>
+<COREF ID="80" REF="89">he</COREF>
+<COREF ID="81" REF="20">mr. icahn</COREF>
+<COREF ID="82" REF="7">usair</COREF>
+<COREF ID="83" REF="17">twa</COREF>
+<COREF ID="84" REF="7">usair</COREF>
+<COREF ID="85" REF="20">mr. icahn</COREF>
+<COREF ID="86" REF="4">twa's offer for usair</COREF>
 <COREF ID="89" REF="80">he</COREF>
-<COREF ID="90">the bid</COREF>
-<COREF ID="91" REF="84">usair</COREF>
-<COREF ID="92" REF="69">piedmont</COREF>
-<COREF ID="93" REF="85">mr. icahn</COREF>
-<COREF ID="94" REF="83">twa</COREF>
-<COREF ID="95">tender offer for piedmont</COREF>
-<COREF ID="97">carl</COREF>
-<COREF ID="98" REF="91">usair</COREF>
-<COREF ID="99" REF="89">he</COREF>
-<COREF ID="100" REF="99">he</COREF>
-<COREF ID="101" REF="93">mr. icahn</COREF>
-<COREF ID="102" REF="101">mr. icahn</COREF>
-<COREF ID="103" REF="94">twa</COREF>
-<COREF ID="104">the airline</COREF>
-<COREF ID="105" REF="98">usair</COREF>
-<COREF ID="106" REF="103">twa</COREF>
-<COREF ID="107" REF="105">usair</COREF>
-<COREF ID="108">its</COREF>
-<COREF ID="109" REF="102">mr. icahn</COREF>
-<COREF ID="110" REF="106">twa</COREF>
-<COREF ID="111" REF="107">usair</COREF>
-<COREF ID="112" REF="110">twa</COREF>
-<COREF ID="113">the drop</COREF>
-<COREF ID="114" REF="109">mr. icahn</COREF>
-<COREF ID="115">icahn</COREF>
-<COREF ID="116" REF="112">twa</COREF>
-<COREF ID="117" REF="111">usair</COREF>
-<COREF ID="118" REF="92">piedmont</COREF>
-<COREF ID="119" REF="118">piedmont</COREF>
-<COREF ID="120">merger with usair</COREF>
-<COREF ID="122" REF="117">usair</COREF>
-<COREF ID="123">the merger</COREF>
-<COREF ID="124">the company</COREF>
-<COREF ID="125">its tender</COREF>
-<COREF ID="127" REF="122">usair</COREF>
-<COREF ID="128" REF="119">piedmont</COREF>
-<COREF ID="129" REF="116">twa</COREF>
-<COREF ID="130" REF="127">usair</COREF>
-<COREF ID="131" REF="114">mr. icahn</COREF>
-<COREF ID="132" REF="129">twa</COREF>
-<COREF ID="133">sec</COREF>
+<COREF ID="90" REF="89">the bid</COREF>
+<COREF ID="91" REF="7">usair</COREF>
+<COREF ID="92" REF="27">piedmont</COREF>
+<COREF ID="93" REF="20">mr. icahn</COREF>
+<COREF ID="94" REF="17">twa</COREF>
+<COREF ID="95" REF="27">tender offer for piedmont</COREF>
+<COREF ID="97" REF="95">carl</COREF>
+<COREF ID="98" REF="7">usair</COREF>
+<COREF ID="99" REF="80">he</COREF>
+<COREF ID="100" REF="80">he</COREF>
+<COREF ID="101" REF="20">mr. icahn</COREF>
+<COREF ID="102" REF="20">mr. icahn</COREF>
+<COREF ID="103" REF="17">twa</COREF>
+<COREF ID="104" REF="154">the airline</COREF>
+<COREF ID="105" REF="7">usair</COREF>
+<COREF ID="106" REF="17">twa</COREF>
+<COREF ID="107" REF="7">usair</COREF>
+<COREF ID="108" REF="134">its</COREF>
+<COREF ID="109" REF="20">mr. icahn</COREF>
+<COREF ID="110" REF="17">twa</COREF>
+<COREF ID="111" REF="7">usair</COREF>
+<COREF ID="112" REF="17">twa</COREF>
+<COREF ID="113" REF="112">the drop</COREF>
+<COREF ID="114" REF="20">mr. icahn</COREF>
+<COREF ID="115" REF="20">icahn</COREF>
+<COREF ID="116" REF="17">twa</COREF>
+<COREF ID="117" REF="7">usair</COREF>
+<COREF ID="118" REF="27">piedmont</COREF>
+<COREF ID="119" REF="27">piedmont</COREF>
+<COREF ID="120" REF="4">merger with usair</COREF>
+<COREF ID="122" REF="7">usair</COREF>
+<COREF ID="123" REF="162">the merger</COREF>
+<COREF ID="124" REF="144">the company</COREF>
+<COREF ID="127" REF="7">usair</COREF>
+<COREF ID="128" REF="27">piedmont</COREF>
+<COREF ID="129" REF="17">twa</COREF>
+<COREF ID="130" REF="7">usair</COREF>
+<COREF ID="131" REF="20">mr. icahn</COREF>
+<COREF ID="132" REF="17">twa</COREF>
+<COREF ID="133" REF="132">sec</COREF>
 <COREF ID="134" REF="108">its</COREF>
-<COREF ID="135" REF="130">usair</COREF>
-<COREF ID="136" REF="132">twa</COREF>
-<COREF ID="137" REF="135">usair</COREF>
-<COREF ID="140" REF="137">usair</COREF>
-<COREF ID="141" REF="134">its</COREF>
-<COREF ID="142">the piedmont acquisition</COREF>
+<COREF ID="135" REF="7">usair</COREF>
+<COREF ID="136" REF="17">twa</COREF>
+<COREF ID="137" REF="7">usair</COREF>
+<COREF ID="140" REF="7">usair</COREF>
+<COREF ID="141" REF="108">its</COREF>
+<COREF ID="142" REF="27">the piedmont acquisition</COREF>
 <COREF ID="144" REF="124">the company</COREF>
-<COREF ID="145" REF="50">it</COREF>
-<COREF ID="146">bank</COREF>
-<COREF ID="147">the purchase</COREF>
-<COREF ID="148" REF="140">usair</COREF>
-<COREF ID="149">manufacturers hanover</COREF>
-<COREF ID="150" REF="148">usair</COREF>
-<COREF ID="151" REF="145">it</COREF>
-<COREF ID="152">the acquisition</COREF>
-<COREF ID="153" REF="151">it</COREF>
+<COREF ID="145" REF="42">it</COREF>
+<COREF ID="146" REF="145">bank</COREF>
+<COREF ID="147" REF="146">the purchase</COREF>
+<COREF ID="148" REF="7">usair</COREF>
+<COREF ID="149" REF="148">manufacturers hanover</COREF>
+<COREF ID="150" REF="7">usair</COREF>
+<COREF ID="151" REF="42">it</COREF>
+<COREF ID="152" REF="142">the acquisition</COREF>
+<COREF ID="153" REF="42">it</COREF>
 <COREF ID="154" REF="104">the airline</COREF>
-<COREF ID="155">the filing</COREF>
-<COREF ID="156" REF="153">it</COREF>
-<COREF ID="157" REF="128">piedmont</COREF>
-<COREF ID="158" REF="150">usair</COREF>
-<COREF ID="159">chairman and chief executive of piedmont</COREF>
-<COREF ID="161" REF="158">usair</COREF>
+<COREF ID="155" REF="46">the filing</COREF>
+<COREF ID="156" REF="42">it</COREF>
+<COREF ID="157" REF="27">piedmont</COREF>
+<COREF ID="158" REF="7">usair</COREF>
+<COREF ID="159" REF="15">chairman and chief executive of piedmont</COREF>
+<COREF ID="161" REF="7">usair</COREF>
 <COREF ID="162" REF="123">the merger</COREF>
-<COREF ID="163" REF="136">twa</COREF>
-<COREF ID="164" REF="161">usair</COREF>
-<COREF ID="165" REF="163">twa</COREF>
-<COREF ID="167" REF="164">usair</COREF>
-<COREF ID="168">the court</COREF>
-<COREF ID="169" REF="165">twa</COREF>
-<COREF ID="170">more usair shares</COREF>
-<COREF ID="172">usair's tender offer for piedmont stock</COREF>
-<COREF ID="175" REF="167">usair</COREF>
-<COREF ID="176" REF="131">mr. icahn</COREF>
-<COREF ID="177" REF="169">twa</COREF>
-<COREF ID="178" REF="175">usair</COREF>
-<COREF ID="179" REF="178">usair</COREF>
-<COREF ID="180" REF="176">mr. icahn</COREF>
-<COREF ID="181" REF="177">twa</COREF>
-<COREF ID="182" REF="179">usair</COREF>
-<COREF ID="183">transportation department</COREF>
-<COREF ID="184" REF="181">twa</COREF>
-<COREF ID="185" REF="180">mr. icahn</COREF>
-<COREF ID="186" REF="184">twa</COREF>
-<COREF ID="187" REF="182">usair</COREF>
-<COREF ID="188" REF="186">twa</COREF>
-<COREF ID="189" REF="156">it</COREF>
-<COREF ID="190">hart-scott-rodino</COREF>
+<COREF ID="163" REF="17">twa</COREF>
+<COREF ID="164" REF="7">usair</COREF>
+<COREF ID="165" REF="17">twa</COREF>
+<COREF ID="167" REF="7">usair</COREF>
+<COREF ID="168" REF="167">the court</COREF>
+<COREF ID="169" REF="17">twa</COREF>
+<COREF ID="170" REF="4">more usair shares</COREF>
+<COREF ID="172" REF="22">usair's tender offer for piedmont stock</COREF>
+<COREF ID="175" REF="7">usair</COREF>
+<COREF ID="176" REF="20">mr. icahn</COREF>
+<COREF ID="177" REF="17">twa</COREF>
+<COREF ID="178" REF="7">usair</COREF>
+<COREF ID="179" REF="7">usair</COREF>
+<COREF ID="180" REF="20">mr. icahn</COREF>
+<COREF ID="181" REF="17">twa</COREF>
+<COREF ID="182" REF="7">usair</COREF>
+<COREF ID="183" REF="191">transportation department</COREF>
+<COREF ID="184" REF="17">twa</COREF>
+<COREF ID="185" REF="20">mr. icahn</COREF>
+<COREF ID="186" REF="17">twa</COREF>
+<COREF ID="187" REF="7">usair</COREF>
+<COREF ID="188" REF="17">twa</COREF>
+<COREF ID="189" REF="42">it</COREF>
+<COREF ID="190" REF="189">hart-scott-rodino</COREF>
 <COREF ID="191" REF="183">transportation department</COREF>
-<COREF ID="192" REF="188">twa</COREF>
-<COREF ID="193" REF="45">department</COREF>
-<COREF ID="194" REF="154">the airline</COREF>
-<COREF ID="195" REF="187">usair</COREF>
-<COREF ID="196" REF="195">usair</COREF>
-<COREF ID="197" REF="192">twa</COREF>
-<COREF ID="198" REF="189">it</COREF>
-<COREF ID="199" REF="193">department</COREF>
-<COREF ID="200">texas air</COREF>
+<COREF ID="192" REF="17">twa</COREF>
+<COREF ID="193" REF="40">department</COREF>
+<COREF ID="194" REF="104">the airline</COREF>
+<COREF ID="195" REF="7">usair</COREF>
+<COREF ID="196" REF="7">usair</COREF>
+<COREF ID="197" REF="17">twa</COREF>
+<COREF ID="198" REF="42">it</COREF>
+<COREF ID="199" REF="40">department</COREF>
+<COREF ID="200" REF="199">texas air</COREF>
 </TXT>

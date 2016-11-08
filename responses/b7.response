@@ -1,13 +1,13 @@
 <TXT>
-<COREF ID="1">western union corp.</COREF>
-<COREF ID="3">western union telegraph co.</COREF>
-<COREF ID="6">the contracts</COREF>
-<COREF ID="17">unions</COREF>
-<COREF ID="8">communications systems company</COREF>
-<COREF ID="9">the existing contracts</COREF>
-<COREF ID="10">the company</COREF>
-<COREF ID="11">the unions</COREF>
-<COREF ID="12">the accord</COREF>
-<COREF ID="14">western union</COREF>
-<COREF ID="16">company</COREF>
+<COREF ID="1" REF="3">western union corp.</COREF>
+<COREF ID="3" REF="1">western union telegraph co.</COREF>
+<COREF ID="6" REF="9">the contracts</COREF>
+<COREF ID="17" REF="11">unions</COREF>
+<COREF ID="8" REF="10">communications systems company</COREF>
+<COREF ID="9" REF="6">the existing contracts</COREF>
+<COREF ID="10" REF="8">the company</COREF>
+<COREF ID="11" REF="17">the unions</COREF>
+<COREF ID="12" REF="11">the accord</COREF>
+<COREF ID="14" REF="1">western union</COREF>
+<COREF ID="16" REF="8">company</COREF>
 </TXT>
