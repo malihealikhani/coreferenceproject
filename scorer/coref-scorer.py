@@ -8,7 +8,7 @@ import copy
 import xml.sax
 from xml.sax.handler import ContentHandler
 
-# useful globals
+#useful globals
 VERBOSE = False
 GOLDPRONOUN = 0
 GOLDCOMMON = 0
@@ -29,10 +29,14 @@ class Entity:
       self.end = -1
 
    def __str__(self):
-      return "%s (%s)" % (self.text, self.id)
+      return "{'ID':"+self.id+",'text':'" + self.text + "','referrent':"+str(self.referents)+"}"
+      # return "%s (%s)" % (self.text, self.id)
 
    def getId(self):
       return self.id
+   def __repr__(self):
+      return "{'ID':"+self.id+",'text':'" + self.text + "','referrent':"+str(self.referents)+"}"
+    
 
 class corefHandler(ContentHandler):
    def __init__(self):
@@ -49,6 +53,16 @@ class corefHandler(ContentHandler):
          self.totalMarkables += 1
          self.inCorefTag = self.inCorefTag + 1
          self.strings.append("")
+
+# EMR: added this code to abort if any cases are found where REF=ID (self-reference)
+#         print "Found ID: %s" % (attr["ID"])
+#         print "Found REF:%s" % (attr.get("REF",""))
+         idstr = attr["ID"]
+         refstr = attr.get("REF","")
+         if idstr == refstr:
+            print "ERROR: found ID and REF with same value (%s)" % idstr
+            print "Please choose a different REF for this np."
+            sys.exit(1)
          
          if str(attr["ID"]) not in self.entities.keys():
             e = Entity()
@@ -87,12 +101,14 @@ def inChain(a, k):
 def spans(ant, k):
    """Returns true if antecedent does not exceed the full span and contains at least the minimum needed."""
    for np in k:
-      if np.min != "":
-         if ant.find(np.min) > -1 and np.text.find(ant) > -1:
-            return True
-      else:
-         if np.text == ant:
-            return True
+      if np.id.lower().find("x") != -1:
+         if np.min != "" :
+            if ant.find(np.min) > -1 and np.text.find(ant) > -1:
+               return True
+         else:
+            if np.text == ant:
+               return True
+   return False
 
 def pronounCheck(phrase):
    global simplePronouns, personPronouns, neuteredPronouns, reflexivePronouns
@@ -124,8 +140,8 @@ def score(resolutions, keys):
    global GOLDPROPER
    global GOLDPRONOUN
    global GOLDCOMMON
-   correct = 0       # the total number of correctly resolved anaphora
-   pronouns = 0       # the total number of pronouns resolved correctly resolved
+   correct = 0       #the total number of correctly resolved anaphora
+   pronouns = 0       #the total number of pronouns resolved correctly resolved
    common = 0
    proper = 0
    for r in resolutions.keys():
@@ -133,10 +149,12 @@ def score(resolutions, keys):
       antecedent = resolutions[r]
       for k in keys:
          if inChain(anaphor, k):
-            # check for the easy case, the anaphor is resolved with another
-            # non-anchor anaphor.
+            #check for the easy case, the anaphor is resolved with another
+            #non-anchor anaphor.
             if antecedent.id in map(lambda x : x.id, k):
                correct += 1
+               if VERBOSE:
+                  print anaphor , " -> ", antecedent
                if pronounCheck(anaphor.text.lower()):
                   pronouns += 1
                elif commonCheck(anaphor.text):
@@ -145,9 +163,11 @@ def score(resolutions, keys):
                   proper += 1
                break
             
-            # anchor antecedent case.
+            #anchor antecedent case.
             if spans(antecedent.text, k):
                correct += 1
+               if VERBOSE:
+                  print anaphor , " -> ", antecedent
                if pronounCheck(anaphor.text.lower()):
                   pronouns += 1
                elif commonCheck(anaphor.text):
@@ -178,7 +198,7 @@ def main(args):
       print "-v : Verbose mode."
       sys.exit(1)
 
-   # some pronoun classes globals
+   #some pronoun classes globals
    global simplePronouns
    global personPronouns
    global neuteredPronouns
@@ -203,6 +223,7 @@ def main(args):
 
    if ("-v" in args) or ("-V" in args):
       VERBOSE = True
+
 
    #read in files
    filelst = []
@@ -229,7 +250,8 @@ def main(args):
       try:
          parser.parse(inFile)
       except:
-         print "Error...XML syntax on file: %s, check for mismatched tags..." % (args[1])
+#         print "Error...XML syntax on file: %s, check for mismatched tags..." % (args[1])
+         print "Error in response file ... aborting!"
          sys.exit(1)
       inFile.close()
       
