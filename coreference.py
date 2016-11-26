@@ -11,6 +11,7 @@
 
 import xml.etree.ElementTree as ET
 import sys
+import re
 # import nltk
 import os
 
@@ -108,8 +109,7 @@ def coreference(f):
     # sytactic heuristics
     # semantic compatability
 
-    return format_output(addDefault(checkPartialMatch(checkAcronym(checkExactMatch(coref)))))
-
+    return format_output(addDefault(checkDateMatch(checkExactMatchNoS(checkPartialMatch(checkAcronym(checkExactMatch(coref)))))))
 ################################################################################
 #
 # Create coref
@@ -141,6 +141,7 @@ def create_coref(root):
 # Parameters: coref data structure (see create coref)
 # Returns: Data structure with tagged references, their coref id and some ref id's
 # Notes: This finds all the exact matches in a corpus and adds the ref id to coref
+#        It searches for matches starting at the coref closest and moves out
 #
 ################################################################################
 
@@ -148,14 +149,73 @@ def create_coref(root):
 def checkExactMatch(coref):
     cnt = 0
     for i in range(len(coref)):
+        a = 0
+        s = 1
         for j in range(len(coref)):  #for j in range(i, -1, -1):
-            if coref[i][1] == coref[j][1] and coref[i][0] != coref[j][0]:
+            if (i - a) < 0:
+                k = i + a
+                a = a + 1
+            else:
+            
+                if j % 2 == 0:
+                    k = i + a
+                    a = a + 1
+                else:
+                    k = i + (a*-1)
+                    
+            if k > (len(coref) -1):
+                k = i + (a*-1)
+                a = a + 1
+                
+            word1 = coref[i][1]
+            word2 = coref[k][1]
+            
+            if word1 == word2 and coref[i][0] != coref[k][0]:
                 if len(coref[i]) is 2:
-                    coref[i].append(coref[j][0])
+                    coref[i].append(coref[k][0])
                     cnt += 1
-                    break
+                    break       
     return coref
 
+def checkExactMatchNoS(coref):
+    cnt = 0
+    for i in range(len(coref)):
+        a = 0
+        s = 1
+        for j in range(len(coref)):  #for j in range(i, -1, -1):
+            if (i - a) < 0:
+                k = i + a
+                a = a + 1
+            else:
+            
+                if j % 2 == 0:
+                    k = i + a
+                    a = a + 1
+                else:
+                    k = i + (a*-1)
+                    
+            if k > (len(coref) -1):
+                k = i + (a*-1)
+                a = a + 1
+            
+            
+            word1 = coref[i][1]
+            word2 = coref[k][1]
+            
+             #If the coref ends in 's, remove it before the comparison
+            if word1[-2:] == "'s":
+                word1 = word1[:-2]
+            
+            if word2[-2:] == "'s":
+                word2 = word2[:-2]
+            
+            if word1 == word2 and coref[i][0] != coref[k][0]:
+                if len(coref[i]) is 2:
+                    coref[i].append(coref[k][0])
+                    cnt += 1
+                    break
+            
+    return coref
 
 ################################################################################
 #
@@ -225,11 +285,30 @@ def checkPartialMatch(coref):
                     'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now']
     #stopwords = stopwords.words('english')
     for i in range(len(coref)):
+        a = 0
+        s = 1
         for j in range(len(coref)):  #for j in range(i, -1, -1):
-            if i != j:
-                words1 = coref[i][1].split(" ")
-                words2 = coref[j][1].split(" ")
+            
+            if (i - a) < 0:
+                k = i + a
+                a = a + 1
+            else:
+            
+                if j % 2 == 0:
+                    k = i + a
+                    a = a + 1
+                else:
+                    k = i + (a*-1)
+                    
+            if k > (len(coref) -1):
+                k = i + (a*-1)
+                a = a + 1
                 
+            if i != k:
+                
+                words1 = coref[i][1].split(" ")
+                words2 = coref[k][1].split(" ")
+
                 # only proceed if at least one phrase is multiple words
                 if len(words1) > 1 or len(words2) > 1:
                     # for each word in word1
@@ -239,7 +318,7 @@ def checkPartialMatch(coref):
                             for word2 in words2:
                                 if word1 == word2:
                                     if len(coref[i]) is 2:
-                                        coref[i].append(coref[j][0])
+                                        coref[i].append(coref[k][0])
     return coref
 
 
@@ -262,6 +341,55 @@ def addDefault(coref):
             if len(coref[i]) is 2:
                 j = coref[i-1][0]
                 coref[i].append(j)
+    return coref
+
+################################################################################
+#
+# Check Date Match
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and all ref id's
+# Notes: Right now this will pair up any two corefs that are both formatted as a date
+#        regardless of whether they are the same date or not.    
+#
+################################################################################
+
+def checkDateMatch(coref):
+    days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday", "today", "tomorrow","yesterday"]
+    for i in range(len(coref)):
+        for j in range(len(coref)):
+            if i != j:
+                w1date = False
+                w2date = False
+                word1 = coref[i][1]
+                word2 = coref[j][1]
+                
+                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?',word1)
+                if word1date is not None:
+                    w1date = True
+                
+                word1date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word1)
+                if word1date is not None:
+                    w1date = True
+                
+                word2date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?',word2)
+                if word2date is not None:
+                    w2date = True
+                
+                word2date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word2)
+                if word2date is not None:
+                    w2date = True
+                
+                if word1 in days:
+                    w1date = True
+                    
+                if word2 in days:
+                    w2date = True
+                
+                if w1date == True and w2date == True:
+                    if len(coref[i]) is 2:
+                        coref[i].append(coref[j][0])
+                        break
     return coref
 
 # Execution script
