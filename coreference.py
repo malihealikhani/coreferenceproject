@@ -85,6 +85,13 @@ def coreference(f):
     notags = ET.tostring(tree_root, encoding='utf8', method='text')
     no_coref = re.sub('<.+>.+<.+>', '', unedited)
 
+    #Nick's Version of no_coref
+    notref = tree_root.text + str(tree_root.tail)
+    for child in tree_root:
+        notref+= str(child.tail)
+    
+    notref = notref.lower()
+    
     # text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
     # sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
     # pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
@@ -113,13 +120,25 @@ def coreference(f):
     # sytactic heuristics
     # semantic compatability
 
+    
+    #Order 1
+    #coref = checkExactMatch(coref)
+    #coref = checkUntagged(coref, unedited)
+    #coref = checkAcronym(coref)
+    #coref = checkPartialMatch(coref)
+    #coref = checkExactMatchNoS(coref)
+    #coref = check_appositive(coref)
+    #coref = checkDateMatch(coref)
+    #coref = addDefault(coref)
+    
+    #Order 2
     coref = checkExactMatch(coref)
-    coref = checkUntagged(coref, unedited)
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
     coref = checkExactMatchNoS(coref)
+    coref = checkDateMatch(coref,no_coref)
+    coref = checkNotTagged(coref,no_coref)
     coref = check_appositive(coref)
-    coref = checkDateMatch(coref)
     coref = addDefault(coref)
 
     return format_output(coref)
@@ -387,7 +406,7 @@ def checkPartialMatch(coref):
 # Returns: Data structure with tagged references, their coref id and all ref id's
 # Notes: This is the last resort. If a NP hasn't been resolved, then this will
 #        add a ref id of a nearby NP. Suprisingly, this bumped our score by
-#        about 5-7%
+#        about 5-7% No need to add reference to the X refs
 #
 ################################################################################
 
@@ -396,8 +415,72 @@ def addDefault(coref):
     for i in range(len(coref)):
         if i > 1:
             if len(coref[i]) is 2:
-                j = coref[i-1][0]
-                coref[i].append(j)
+                if coref[i][0][0] != "X":
+                    j = coref[i-1][0]
+                    coref[i].append(j)
+    return coref
+
+
+
+
+
+
+
+################################################################################
+#
+# Check Not Tagged
+#
+# Parameters: coref data structure (see create coref), 
+# Returns: Data structure with tagged references, their coref id and all ref id's
+# Notes: Checks the untagged text for a match
+#            
+#
+################################################################################
+
+
+def checkNotTagged(coref,notref):
+
+    cnt = 1
+    skip = ['what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'is', 'are',
+            'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does',
+            'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until',
+            'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into',
+            'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down',
+            'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here',
+            'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more',
+            'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so',
+            'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now']
+    
+    for i in range(len(coref)):
+        found = False
+        if len(coref[i]) is 2:
+            words = coref[i][1]
+            #print "words is: " + words
+            words = words.split()
+            print len(words)
+            if len(words) > 1:
+                for word in words:
+                    print "word is: " + word
+                    if not (word in skip):
+                        inText = notref.find(word)
+
+                        if inText > 0:
+                            found = True
+                
+                if found == True:
+                    coref.append(['X' + str(cnt), word])
+                    coref[i].append('X' + str(cnt))
+                    cnt = cnt + 1
+            else:
+                #print "just one word and it is: " + words
+                if not (words in skip):
+                        inText = notref.find(words[0])
+
+                        if inText > 0:
+                            coref.append(['X' + str(cnt), words[0]])
+                            coref[i].append('X' + str(cnt))
+                            cnt = cnt + 1
+
     return coref
 
 ################################################################################
