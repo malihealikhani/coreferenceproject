@@ -149,25 +149,24 @@ def create_coref(root):
 def checkExactMatch(coref):
     cnt = 0
     for i in range(len(coref)):
+        word1 = coref[i][1]
         a = 0
-        s = 1
-        for j in range(len(coref)):  #for j in range(i, -1, -1):
+        # s = 1
+        for j in range(len(coref)):
             if (i - a) < 0:
                 k = i + a
-                a = a + 1
+                a += 1
             else:
-            
                 if j % 2 == 0:
                     k = i + a
-                    a = a + 1
+                    a += 1
                 else:
-                    k = i + (a*-1)
+                    k = i + (a * -1)
                     
-            if k > (len(coref) -1):
+            if k > (len(coref) - 1):
                 k = i + (a*-1)
-                a = a + 1
-                
-            word1 = coref[i][1]
+                a += 1
+
             word2 = coref[k][1]
             
             if word1 == word2 and coref[i][0] != coref[k][0]:
@@ -177,32 +176,32 @@ def checkExactMatch(coref):
                     break       
     return coref
 
+
 def checkExactMatchNoS(coref):
     cnt = 0
     for i in range(len(coref)):
         a = 0
         s = 1
-        for j in range(len(coref)):  #for j in range(i, -1, -1):
+        for j in range(len(coref)):
             if (i - a) < 0:
                 k = i + a
-                a = a + 1
+                a += 1
             else:
             
                 if j % 2 == 0:
                     k = i + a
-                    a = a + 1
+                    a += 1
                 else:
                     k = i + (a*-1)
                     
             if k > (len(coref) -1):
                 k = i + (a*-1)
-                a = a + 1
-            
-            
+                a += 1
+
             word1 = coref[i][1]
             word2 = coref[k][1]
             
-             #If the coref ends in 's, remove it before the comparison
+            # If the coref ends in 's, remove it before the comparison
             if word1[-2:] == "'s":
                 word1 = word1[:-2]
             
@@ -243,7 +242,8 @@ def checkAcronym(coref):
                                 acr1 += word[0]
                             acr2 += word[0]
                         if acr1 == coref[i][1] or acr2 == coref[i][1]:
-                            coref[i].append(coref[j][0])
+                            if coref[i][0] != coref[j][0]:
+                                coref[i].append(coref[j][0])
             # This finds acronyms from references (Federal Aviation Administration finds FAA)
             else:
                 for word in coref[i][1].split():
@@ -287,22 +287,21 @@ def checkPartialMatch(coref):
     for i in range(len(coref)):
         a = 0
         s = 1
-        for j in range(len(coref)):  #for j in range(i, -1, -1):
-            
+        for j in range(len(coref)):
             if (i - a) < 0:
                 k = i + a
-                a = a + 1
+                a += 1
             else:
             
                 if j % 2 == 0:
                     k = i + a
-                    a = a + 1
+                    a += 1
                 else:
-                    k = i + (a*-1)
+                    k = i + (a * -1)
                     
-            if k > (len(coref) -1):
-                k = i + (a*-1)
-                a = a + 1
+            if k > (len(coref) - 1):
+                k = i + (a * -1)
+                a += 1
                 
             if i != k:
                 
@@ -317,7 +316,7 @@ def checkPartialMatch(coref):
                         if not(word1 in stopwords):
                             for word2 in words2:
                                 if word1 == word2:
-                                    if len(coref[i]) is 2:
+                                    if len(coref[i]) == 2 and coref[i][0] != coref[k][0]:
                                         coref[i].append(coref[k][0])
     return coref
 
@@ -354,8 +353,10 @@ def addDefault(coref):
 #
 ################################################################################
 
+
 def checkDateMatch(coref):
-    days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday", "today", "tomorrow","yesterday"]
+    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "today", "tomorrow",
+            "yesterday"]
     for i in range(len(coref)):
         for j in range(len(coref)):
             if i != j:
@@ -364,19 +365,21 @@ def checkDateMatch(coref):
                 word1 = coref[i][1]
                 word2 = coref[j][1]
                 
-                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?',word1)
+                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?', word1)
                 if word1date is not None:
                     w1date = True
                 
-                word1date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word1)
+                word1date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|'
+                                      r'may|june|july|august|september|october|november|december).(\d)', word1)
                 if word1date is not None:
                     w1date = True
                 
-                word2date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?',word2)
+                word2date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?', word2)
                 if word2date is not None:
                     w2date = True
                 
-                word2date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word2)
+                word2date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|'
+                                      r'may|june|july|august|september|october|november|december).(\d)', word2)
                 if word2date is not None:
                     w2date = True
                 
@@ -386,7 +389,7 @@ def checkDateMatch(coref):
                 if word2 in days:
                     w2date = True
                 
-                if w1date == True and w2date == True:
+                if w1date and w2date:
                     if len(coref[i]) is 2:
                         coref[i].append(coref[j][0])
                         break
