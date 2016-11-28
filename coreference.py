@@ -131,7 +131,7 @@ def coreference(f):
     #coref = checkDateMatch(coref)
     #coref = addDefault(coref)
     
-    #Order 2
+    #Order 2 has accuracy of 0.6259
     coref = checkExactMatch(coref)
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
