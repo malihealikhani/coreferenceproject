@@ -1,12 +1,12 @@
 <TXT>
 <COREF ID="5" REF="17">farm-debt mediation</COREF>
-<COREF ID="10" REF="11">i</COREF>
-<COREF ID="11" REF="10">your</COREF>
+<COREF ID="10" REF="X0">i</COREF>
+<COREF ID="11" REF="X1">your</COREF>
 <COREF ID="14" REF="22">minnesota's program</COREF>
 <COREF ID="16" REF="19">it</COREF>
 <COREF ID="17" REF="5">minnesota mediation</COREF>
 <COREF ID="19" REF="16">it</COREF>
-<COREF ID="20" REF="19">creditors</COREF>
+<COREF ID="20" REF="X2">creditors</COREF>
 <COREF ID="21" REF="19">it</COREF>
 <COREF ID="22" REF="14">the program</COREF>
 <COREF ID="23" REF="24">mediation</COREF>
@@ -15,15 +15,26 @@
 <COREF ID="26" REF="17">minnesota</COREF>
 <COREF ID="27" REF="26">chapter 12</COREF>
 <COREF ID="28" REF="32">your article</COREF>
-<COREF ID="30" REF="28">the proposed amendments</COREF>
+<COREF ID="30" REF="X5">the proposed amendments</COREF>
 <COREF ID="31" REF="34">mediation</COREF>
 <COREF ID="32" REF="28">the article</COREF>
-<COREF ID="33" REF="32">they</COREF>
+<COREF ID="33" REF="X7">they</COREF>
 <COREF ID="34" REF="31">mediation</COREF>
 <COREF ID="35" REF="38">it</COREF>
-<COREF ID="37" REF="35">itself</COREF>
+<COREF ID="37" REF="X8">itself</COREF>
 <COREF ID="38" REF="35">it</COREF>
-<COREF ID="39" REF="40">farmers</COREF>
-<COREF ID="40" REF="39">the continuing crisis</COREF>
+<COREF ID="39" REF="X9">farmers</COREF>
+<COREF ID="40" REF="X10">the continuing crisis</COREF>
 <COREF ID="42" REF="40">hubert h. humphrey iii</COREF>
+<COREF ID="X0" REF="10">i</COREF>
+<COREF ID="X1" REF="11">your</COREF>
+<COREF ID="X2" REF="20">creditors</COREF>
+<COREF ID="X3" REF="22">the program</COREF>
+<COREF ID="X4" REF="X6">your article</COREF>
+<COREF ID="X5" REF="30">the proposed amendments</COREF>
+<COREF ID="X6" REF="X4">the article</COREF>
+<COREF ID="X7" REF="33">they</COREF>
+<COREF ID="X8" REF="37">itself</COREF>
+<COREF ID="X9" REF="39">farmers</COREF>
+<COREF ID="X10" REF="40">the continuing crisis</COREF>
 </TXT>

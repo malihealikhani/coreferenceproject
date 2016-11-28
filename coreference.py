@@ -77,10 +77,14 @@ def format_output(coref):
 def coreference(f):
 
     # Create data structures
+    with open(f, 'r') as file:
+        unedited = file.read()
     tree = ET.parse(open(f))
     tree_root = tree.getroot()
     coref = create_coref(tree_root)
     notags = ET.tostring(tree_root, encoding='utf8', method='text')
+    no_coref = re.sub('<.+>.+<.+>', '', unedited)
+
     # text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
     # sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
     # pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
@@ -110,15 +114,16 @@ def coreference(f):
     # semantic compatability
 
     coref = checkExactMatch(coref)
+    coref = checkUntagged(coref, unedited)
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
     coref = checkExactMatchNoS(coref)
     coref = check_appositive(coref)
     coref = checkDateMatch(coref)
     coref = addDefault(coref)
-    coref = checkExactMatch(coref)
 
     return format_output(coref)
+
 ################################################################################
 #
 # Create coref
@@ -185,6 +190,17 @@ def checkExactMatch(coref):
                     break       
     return coref
 
+
+def checkUntagged(coref, unedited):
+    cnt = 0
+    for i in range(len(coref)):
+        if len(coref[i]) == 2:
+            if coref[i][1] in unedited:
+                coref.append(['X'+str(cnt), coref[i][1]])
+
+                cnt += 1
+    return coref
+
 ################################################################################
 #
 # Check Exact Match no 's
@@ -243,7 +259,7 @@ def checkExactMatchNoS(coref):
 #
 # Parameters: coref data structure (see create coref)
 # Returns: Data structure with tagged references, their coref id and some ref id's
-# Notes: This checks acronyms against all possible matches and adds ref id to coref
+# Notes:
 #
 ################################################################################
 

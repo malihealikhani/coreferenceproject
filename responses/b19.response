@@ -1,18 +1,29 @@
 <TXT>
 <COREF ID="2" REF="19">the united steelworkers union</COREF>
 <COREF ID="3" REF="7">early contract talks</COREF>
-<COREF ID="4" REF="6">the nation's two biggest aluminum makers</COREF>
-<COREF ID="6" REF="4">here</COREF>
+<COREF ID="4" REF="X1">the nation's two biggest aluminum makers</COREF>
+<COREF ID="6" REF="X2">here</COREF>
 <COREF ID="7" REF="3">the early bargaining</COREF>
-<COREF ID="10" REF="11">the current contracts</COREF>
-<COREF ID="11" REF="10">1986</COREF>
-<COREF ID="16" REF="18">then</COREF>
+<COREF ID="10" REF="X4">the current contracts</COREF>
+<COREF ID="11" REF="X5">1986</COREF>
+<COREF ID="16" REF="X6">then</COREF>
 <COREF ID="18" REF="16">mr. becker</COREF>
 <COREF ID="19" REF="2">union members</COREF>
-<COREF ID="21" REF="22">those gains</COREF>
-<COREF ID="22" REF="21">the sacrifices they made</COREF>
-<COREF ID="26" REF="7">the early talks</COREF>
+<COREF ID="21" REF="X8">those gains</COREF>
+<COREF ID="22" REF="X9">the sacrifices they made</COREF>
+<COREF ID="26" REF="X0">the early talks</COREF>
 <COREF ID="28" REF="2">the steelworkers</COREF>
 <COREF ID="29" REF="30">alcoa</COREF>
 <COREF ID="30" REF="29">reynolds</COREF>
+<COREF ID="X0" REF="X3">early contract talks</COREF>
+<COREF ID="X1" REF="4">the nation's two biggest aluminum makers</COREF>
+<COREF ID="X2" REF="6">here</COREF>
+<COREF ID="X3" REF="X0">the early bargaining</COREF>
+<COREF ID="X4" REF="10">the current contracts</COREF>
+<COREF ID="X5" REF="11">1986</COREF>
+<COREF ID="X6" REF="16">then</COREF>
+<COREF ID="X7" REF="19">union members</COREF>
+<COREF ID="X8" REF="21">those gains</COREF>
+<COREF ID="X9" REF="22">the sacrifices they made</COREF>
+<COREF ID="X10" REF="X3">the early talks</COREF>
 </TXT>

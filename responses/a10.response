@@ -2,35 +2,35 @@
 <COREF ID="1">grounded-jets</COREF>
 <COREF ID="2" REF="63">f-14's</COREF>
 <COREF ID="3" REF="10">navy</COREF>
-<COREF ID="4" REF="3">its</COREF>
+<COREF ID="4" REF="X0">its</COREF>
 <COREF ID="6" REF="16">the third ``tomcat'' crash in a month</COREF>
-<COREF ID="8" REF="6">the second in a week</COREF>
+<COREF ID="8" REF="X1">the second in a week</COREF>
 <COREF ID="10" REF="13">navy</COREF>
 <COREF ID="11" REF="66">they</COREF>
 <COREF ID="12" REF="23">the aircraft</COREF>
 <COREF ID="13" REF="15">navy</COREF>
-<COREF ID="14" REF="13">both men</COREF>
+<COREF ID="14" REF="X2">both men</COREF>
 <COREF ID="15" REF="13">navy</COREF>
 <COREF ID="16" REF="18">the crash</COREF>
 <COREF ID="17" REF="39">thursday</COREF>
 <COREF ID="18" REF="16">the third tomcat crash</COREF>
 <COREF ID="22" REF="15">navy</COREF>
 <COREF ID="23" REF="12">the aircraft</COREF>
-<COREF ID="24" REF="25">a procedure the military uses to conduct an intensive review</COREF>
-<COREF ID="25" REF="24">this three-day period</COREF>
+<COREF ID="24" REF="23">a procedure the military uses to conduct an intensive review</COREF>
+<COREF ID="25" REF="X4">this three-day period</COREF>
 <COREF ID="27" REF="35">f-14s</COREF>
 <COREF ID="28" REF="22">navy</COREF>
 <COREF ID="29" REF="30">the aircraft carrier</COREF>
 <COREF ID="30" REF="29">carrier</COREF>
 <COREF ID="33" REF="45">bacon</COREF>
-<COREF ID="34" REF="33">the stand-down</COREF>
+<COREF ID="34" REF="X7">the stand-down</COREF>
 <COREF ID="35" REF="27">the f-14s</COREF>
 <COREF ID="36" REF="35">the chief of naval operations</COREF>
 <COREF ID="38" REF="18">the latest crash</COREF>
 <COREF ID="39" REF="17">thursday</COREF>
-<COREF ID="40" REF="41">him</COREF>
-<COREF ID="41" REF="40">he</COREF>
-<COREF ID="42" REF="41">the standdown</COREF>
+<COREF ID="40" REF="X9">him</COREF>
+<COREF ID="41" REF="X10">he</COREF>
+<COREF ID="42" REF="X11">the standdown</COREF>
 <COREF ID="43" REF="53">the entire fleet of more than 300 aircraft</COREF>
 <COREF ID="45" REF="48">bacon</COREF>
 <COREF ID="46" REF="51">navy</COREF>
@@ -40,19 +40,36 @@
 <COREF ID="51" REF="46">navy</COREF>
 <COREF ID="52" REF="18">the tomcat</COREF>
 <COREF ID="53" REF="56">a $38 million, twin-engine aircraft</COREF>
-<COREF ID="54" REF="53">the standard fighter plane</COREF>
+<COREF ID="54" REF="X13">the standard fighter plane</COREF>
 <COREF ID="56" REF="23">the aircraft</COREF>
 <COREF ID="58" REF="56">the f-14a</COREF>
 <COREF ID="59" REF="63">the f-14</COREF>
-<COREF ID="60" REF="59">then</COREF>
+<COREF ID="60" REF="X14">then</COREF>
 <COREF ID="61" REF="68">bacon</COREF>
 <COREF ID="62" REF="64">navy</COREF>
 <COREF ID="63" REF="59">f-14</COREF>
 <COREF ID="64" REF="62">navy</COREF>
-<COREF ID="65" REF="64">me</COREF>
+<COREF ID="65" REF="X15">me</COREF>
 <COREF ID="66" REF="11">they</COREF>
 <COREF ID="67" REF="47">these accidents</COREF>
 <COREF ID="68" REF="61">bacon</COREF>
-<COREF ID="69" REF="70">a mystery</COREF>
-<COREF ID="70" REF="69">02-22-96</COREF>
+<COREF ID="69" REF="68">a mystery</COREF>
+<COREF ID="70" REF="X16">02-22-96</COREF>
+<COREF ID="X0" REF="4">its</COREF>
+<COREF ID="X1" REF="8">the second in a week</COREF>
+<COREF ID="X2" REF="14">both men</COREF>
+<COREF ID="X3" REF="X8">the crash</COREF>
+<COREF ID="X4" REF="25">this three-day period</COREF>
+<COREF ID="X5" REF="X6">the aircraft carrier</COREF>
+<COREF ID="X6" REF="X5">carrier</COREF>
+<COREF ID="X7" REF="34">the stand-down</COREF>
+<COREF ID="X8" REF="X3">the latest crash</COREF>
+<COREF ID="X9" REF="40">him</COREF>
+<COREF ID="X10" REF="41">he</COREF>
+<COREF ID="X11" REF="42">the standdown</COREF>
+<COREF ID="X12" REF="X5">a $38 million, twin-engine aircraft</COREF>
+<COREF ID="X13" REF="54">the standard fighter plane</COREF>
+<COREF ID="X14" REF="60">then</COREF>
+<COREF ID="X15" REF="65">me</COREF>
+<COREF ID="X16" REF="70">02-22-96</COREF>
 </TXT>

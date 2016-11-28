@@ -14,35 +14,35 @@
 <COREF ID="29" REF="16">the emirates</COREF>
 <COREF ID="33" REF="29">sheik zayed</COREF>
 <COREF ID="37" REF="23">the ruler</COREF>
-<COREF ID="38" REF="37">his country</COREF>
+<COREF ID="38" REF="X4">his country</COREF>
 <COREF ID="40" REF="49">opec</COREF>
-<COREF ID="41" REF="40">news agency</COREF>
+<COREF ID="41" REF="X5">news agency</COREF>
 <COREF ID="42" REF="50">the emirates' production level</COREF>
 <COREF ID="45" REF="29">the emirates</COREF>
 <COREF ID="46" REF="82">yesterday</COREF>
-<COREF ID="47" REF="46">the government</COREF>
+<COREF ID="47" REF="X6">the government</COREF>
 <COREF ID="48" REF="67">its</COREF>
 <COREF ID="49" REF="57">opec</COREF>
 <COREF ID="50" REF="52">current production</COREF>
-<COREF ID="51" REF="50">the target</COREF>
+<COREF ID="51" REF="X8">the target</COREF>
 <COREF ID="52" REF="50">the emirates' current production</COREF>
 <COREF ID="54" REF="97">a day</COREF>
 <COREF ID="56" REF="65">it</COREF>
 <COREF ID="57" REF="49">opec</COREF>
-<COREF ID="60" REF="57">their</COREF>
+<COREF ID="60" REF="X10">their</COREF>
 <COREF ID="61" REF="78">their quota</COREF>
 <COREF ID="63" REF="94">opec output</COREF>
 <COREF ID="65" REF="56">it</COREF>
-<COREF ID="66" REF="65">the system</COREF>
+<COREF ID="66" REF="X12">the system</COREF>
 <COREF ID="67" REF="48">its</COREF>
-<COREF ID="68" REF="67">they</COREF>
+<COREF ID="68" REF="X13">they</COREF>
 <COREF ID="69" REF="85">the uae</COREF>
-<COREF ID="70" REF="69">the others</COREF>
+<COREF ID="70" REF="X14">the others</COREF>
 <COREF ID="71" REF="74">opec</COREF>
 <COREF ID="72" REF="22">mr. subroto</COREF>
 <COREF ID="73" REF="72">abu dhabi</COREF>
 <COREF ID="74" REF="71">opec</COREF>
-<COREF ID="75" REF="3">price</COREF>
+<COREF ID="75" REF="X0">price</COREF>
 <COREF ID="76" REF="79">oil</COREF>
 <COREF ID="77" REF="45">the emirates</COREF>
 <COREF ID="78" REF="61">quota</COREF>
@@ -54,12 +54,12 @@
 <COREF ID="85" REF="69">the talks in the uae</COREF>
 <COREF ID="87" REF="81">opec</COREF>
 <COREF ID="88" REF="87">total opec output</COREF>
-<COREF ID="90" REF="91">the recent run-up</COREF>
+<COREF ID="90" REF="X19">the recent run-up</COREF>
 <COREF ID="91" REF="90">saudi arabia</COREF>
-<COREF ID="92" REF="91">the cartel's biggest producer</COREF>
+<COREF ID="92" REF="X20">the cartel's biggest producer</COREF>
 <COREF ID="94" REF="63">opec output</COREF>
 <COREF ID="97" REF="108">20 million barrels a day in the first week of the month</COREF>
-<COREF ID="100" REF="97">that</COREF>
+<COREF ID="100" REF="X22">that</COREF>
 <COREF ID="101" REF="110">opec</COREF>
 <COREF ID="102" REF="79">world oil markets</COREF>
 <COREF ID="104" REF="106">manager of petroleum analysis</COREF>
@@ -67,4 +67,30 @@
 <COREF ID="108" REF="97">the 19 million barrels a day</COREF>
 <COREF ID="110" REF="101">opec</COREF>
 <COREF ID="111" REF="72">mr. szabo</COREF>
+<COREF ID="X0" REF="X15">a possible price war</COREF>
+<COREF ID="X1" REF="X2">total cartel output</COREF>
+<COREF ID="X2" REF="X1">the cartel</COREF>
+<COREF ID="X3" REF="37">the ruler</COREF>
+<COREF ID="X4" REF="38">his country</COREF>
+<COREF ID="X5" REF="41">news agency</COREF>
+<COREF ID="X6" REF="47">the government</COREF>
+<COREF ID="X7" REF="52">current production</COREF>
+<COREF ID="X8" REF="51">the target</COREF>
+<COREF ID="X9" REF="108">a day</COREF>
+<COREF ID="X10" REF="60">their</COREF>
+<COREF ID="X11" REF="X17">their quota</COREF>
+<COREF ID="X12" REF="66">the system</COREF>
+<COREF ID="X13" REF="68">they</COREF>
+<COREF ID="X14" REF="70">the others</COREF>
+<COREF ID="X15" REF="X0">price</COREF>
+<COREF ID="X16" REF="X18">oil</COREF>
+<COREF ID="X17" REF="X11">quota</COREF>
+<COREF ID="X18" REF="X16">world oil prices</COREF>
+<COREF ID="X19" REF="90">the recent run-up</COREF>
+<COREF ID="X20" REF="92">the cartel's biggest producer</COREF>
+<COREF ID="X21" REF="X9">20 million barrels a day in the first week of the month</COREF>
+<COREF ID="X22" REF="100">that</COREF>
+<COREF ID="X23" REF="X18">world oil markets</COREF>
+<COREF ID="X24" REF="X25">manager of petroleum analysis</COREF>
+<COREF ID="X25" REF="X24">manager of petroleum planning</COREF>
 </TXT>

@@ -2,11 +2,11 @@
 <COREF ID="1" REF="39">pantex</COREF>
 <COREF ID="2">flights</COREF>
 <COREF ID="4" REF="9">federal aviation administration</COREF>
-<COREF ID="5" REF="4">the number</COREF>
+<COREF ID="5" REF="X0">the number</COREF>
 <COREF ID="7" REF="1">pantex weapons plant</COREF>
 <COREF ID="8" REF="17">plutonium</COREF>
 <COREF ID="9" REF="4">faa</COREF>
-<COREF ID="10" REF="9">passes</COREF>
+<COREF ID="10" REF="X1">passes</COREF>
 <COREF ID="11" REF="21">flight</COREF>
 <COREF ID="12" REF="74">the plant</COREF>
 <COREF ID="13" REF="40">energy</COREF>
@@ -14,15 +14,15 @@
 <COREF ID="18" REF="20">a highly radioactive element</COREF>
 <COREF ID="20" REF="18">one chance in 10 million</COREF>
 <COREF ID="21" REF="11">flight</COREF>
-<COREF ID="22" REF="23">this year</COREF>
-<COREF ID="23" REF="22">a safety board</COREF>
+<COREF ID="22" REF="X2">this year</COREF>
+<COREF ID="23" REF="X3">a safety board</COREF>
 <COREF ID="24" REF="23">trish neusch</COREF>
 <COREF ID="26" REF="65">amarillo</COREF>
 <COREF ID="27" REF="43">the airport</COREF>
-<COREF ID="28" REF="27">there</COREF>
+<COREF ID="28" REF="X5">there</COREF>
 <COREF ID="29" REF="68">these planes</COREF>
 <COREF ID="30" REF="50">the faa air traffic manager</COREF>
-<COREF ID="34" REF="35">a ``manual count on a pad,''</COREF>
+<COREF ID="34" REF="X6">a ``manual count on a pad,''</COREF>
 <COREF ID="35" REF="34">that 60-day accounting</COREF>
 <COREF ID="36" REF="29">25 planes a day</COREF>
 <COREF ID="39" REF="1">pantex</COREF>
@@ -53,6 +53,21 @@
 <COREF ID="73" REF="69">oklahoma</COREF>
 <COREF ID="74" REF="12">the plant</COREF>
 <COREF ID="75" REF="67">mcnulty</COREF>
-<COREF ID="76" REF="77">they</COREF>
-<COREF ID="77" REF="76">02-14-96</COREF>
+<COREF ID="76" REF="75">they</COREF>
+<COREF ID="77" REF="X14">02-14-96</COREF>
+<COREF ID="X0" REF="5">the number</COREF>
+<COREF ID="X1" REF="10">passes</COREF>
+<COREF ID="X2" REF="22">this year</COREF>
+<COREF ID="X3" REF="23">a safety board</COREF>
+<COREF ID="X4" REF="X12">the airport</COREF>
+<COREF ID="X5" REF="28">there</COREF>
+<COREF ID="X6" REF="34">a ``manual count on a pad,''</COREF>
+<COREF ID="X7" REF="X9">25 planes a day</COREF>
+<COREF ID="X8" REF="74">the former weapons assembly plant</COREF>
+<COREF ID="X9" REF="X7">military planes</COREF>
+<COREF ID="X10" REF="57">air traffic controllers</COREF>
+<COREF ID="X11" REF="79">the bunkers</COREF>
+<COREF ID="X12" REF="X4">airport</COREF>
+<COREF ID="X13" REF="69">the plutonium area</COREF>
+<COREF ID="X14" REF="77">02-14-96</COREF>
 </TXT>

@@ -8,7 +8,7 @@
 <COREF ID="12" REF="18">three recent f-14 crashes</COREF>
 <COREF ID="14" REF="17">today</COREF>
 <COREF ID="15" REF="19">navy</COREF>
-<COREF ID="16" REF="15">its</COREF>
+<COREF ID="16" REF="X0">its</COREF>
 <COREF ID="17" REF="14">today</COREF>
 <COREF ID="18" REF="25">the recent mishaps involving f-14as and ds</COREF>
 <COREF ID="19" REF="15">navy</COREF>
@@ -18,7 +18,7 @@
 <COREF ID="26" REF="40">all f-14s</COREF>
 <COREF ID="27" REF="21">f-14</COREF>
 <COREF ID="28" REF="19">navy</COREF>
-<COREF ID="29" REF="31">the standdown</COREF>
+<COREF ID="29" REF="X2">the standdown</COREF>
 <COREF ID="31" REF="29">persian gulf</COREF>
 <COREF ID="32" REF="48">geisen</COREF>
 <COREF ID="33" REF="52">those planes</COREF>
@@ -27,25 +27,36 @@
 <COREF ID="38" REF="11">it</COREF>
 <COREF ID="39" REF="44">navy</COREF>
 <COREF ID="40" REF="26">about 330 f-14s</COREF>
-<COREF ID="43" REF="40">a unit</COREF>
+<COREF ID="43" REF="X3">a unit</COREF>
 <COREF ID="44" REF="47">navy</COREF>
 <COREF ID="46" REF="44">that figure</COREF>
 <COREF ID="47" REF="44">navy</COREF>
 <COREF ID="48" REF="51">geisen</COREF>
 <COREF ID="49" REF="36">the aircraft</COREF>
-<COREF ID="50" REF="49">then</COREF>
+<COREF ID="50" REF="X5">then</COREF>
 <COREF ID="51" REF="48">geisen</COREF>
 <COREF ID="52" REF="33">the planes</COREF>
 <COREF ID="54" REF="65">now northrop grumman</COREF>
 <COREF ID="55" REF="54">the company</COREF>
 <COREF ID="56" REF="60">navy</COREF>
-<COREF ID="58" REF="56">he</COREF>
+<COREF ID="58" REF="X6">he</COREF>
 <COREF ID="59" REF="17">today</COREF>
 <COREF ID="60" REF="56">navy</COREF>
 <COREF ID="61" REF="63">the three recent crashes</COREF>
-<COREF ID="62" REF="61">their</COREF>
+<COREF ID="62" REF="X8">their</COREF>
 <COREF ID="63" REF="61">three days</COREF>
 <COREF ID="64" REF="51">geisen</COREF>
 <COREF ID="65" REF="54">northrop grumman</COREF>
-<COREF ID="66" REF="14">02-22-96</COREF>
+<COREF ID="66" REF="X10">02-22-96</COREF>
+<COREF ID="X0" REF="16">its</COREF>
+<COREF ID="X1" REF="25">these mishaps</COREF>
+<COREF ID="X2" REF="29">the standdown</COREF>
+<COREF ID="X3" REF="43">a unit</COREF>
+<COREF ID="X4" REF="49">the aircraft</COREF>
+<COREF ID="X5" REF="50">then</COREF>
+<COREF ID="X6" REF="58">he</COREF>
+<COREF ID="X7" REF="X9">the three recent crashes</COREF>
+<COREF ID="X8" REF="62">their</COREF>
+<COREF ID="X9" REF="X7">three days</COREF>
+<COREF ID="X10" REF="66">02-22-96</COREF>
 </TXT>

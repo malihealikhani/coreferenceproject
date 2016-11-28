@@ -9,5 +9,11 @@
 <COREF ID="11" REF="17">the unions</COREF>
 <COREF ID="12" REF="11">the accord</COREF>
 <COREF ID="14" REF="3">western union</COREF>
-<COREF ID="16" REF="10">company</COREF>
+<COREF ID="16" REF="X1">company</COREF>
+<COREF ID="X0" REF="11">unions</COREF>
+<COREF ID="X1" REF="16">communications systems company</COREF>
+<COREF ID="X2" REF="9">the existing contracts</COREF>
+<COREF ID="X3" REF="X1">the company</COREF>
+<COREF ID="X4" REF="X0">the unions</COREF>
+<COREF ID="X5" REF="X3">company</COREF>
 </TXT>

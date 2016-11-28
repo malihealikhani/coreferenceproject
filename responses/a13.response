@@ -11,21 +11,28 @@
 <COREF ID="19" REF="17">the moscow airbus a310 flight</COREF>
 <COREF ID="22" REF="39">hong kong</COREF>
 <COREF ID="23" REF="29">it</COREF>
-<COREF ID="24" REF="25">the deaths</COREF>
-<COREF ID="25" REF="24">the defendant</COREF>
+<COREF ID="24" REF="X1">the deaths</COREF>
+<COREF ID="25" REF="X2">the defendant</COREF>
 <COREF ID="26" REF="1">aeroflot</COREF>
 <COREF ID="27" REF="22">the hong kong-bound aircraft</COREF>
 <COREF ID="29" REF="23">it</COREF>
 <COREF ID="31" REF="32">eldar</COREF>
 <COREF ID="32" REF="31">his 13-year-old sister</COREF>
-<COREF ID="35" REF="37">passengers</COREF>
-<COREF ID="37" REF="35">the managing director</COREF>
+<COREF ID="35" REF="X3">passengers</COREF>
+<COREF ID="37" REF="X4">the managing director</COREF>
 <COREF ID="38" REF="15">he</COREF>
 <COREF ID="39" REF="41">hong kong</COREF>
 <COREF ID="40" REF="29">it</COREF>
 <COREF ID="41" REF="39">hong kong</COREF>
-<COREF ID="42" REF="43">mr miller</COREF>
-<COREF ID="43" REF="42">the writs</COREF>
+<COREF ID="42" REF="41">mr miller</COREF>
+<COREF ID="43" REF="X5">the writs</COREF>
 <COREF ID="44" REF="41">family members who live outside hong kong</COREF>
-<COREF ID="46" REF="44">03-27-96</COREF>
+<COREF ID="46" REF="X6">03-27-96</COREF>
+<COREF ID="X0" REF="7">the families</COREF>
+<COREF ID="X1" REF="24">the deaths</COREF>
+<COREF ID="X2" REF="25">the defendant</COREF>
+<COREF ID="X3" REF="35">passengers</COREF>
+<COREF ID="X4" REF="37">the managing director</COREF>
+<COREF ID="X5" REF="43">the writs</COREF>
+<COREF ID="X6" REF="46">03-27-96</COREF>
 </TXT>

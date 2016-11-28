@@ -2,9 +2,9 @@
 <COREF ID="4" REF="7">additional shares of usair group inc.</COREF>
 <COREF ID="6" REF="4">the order</COREF>
 <COREF ID="7" REF="201">usair</COREF>
-<COREF ID="8" REF="7">another blow</COREF>
+<COREF ID="8" REF="X0">another blow</COREF>
 <COREF ID="12" REF="7">washington-based usair</COREF>
-<COREF ID="14" REF="12">proposed transaction</COREF>
+<COREF ID="14" REF="X1">proposed transaction</COREF>
 <COREF ID="15" REF="17">chairman of twa</COREF>
 <COREF ID="17" REF="21">twa</COREF>
 <COREF ID="201" REF="7">usair</COREF>
@@ -12,13 +12,13 @@
 <COREF ID="21" REF="17">twa</COREF>
 <COREF ID="22" REF="172">usair's largest shareholder</COREF>
 <COREF ID="24" REF="20">mr. icahn</COREF>
-<COREF ID="25" REF="24">the attempt</COREF>
+<COREF ID="25" REF="X2">the attempt</COREF>
 <COREF ID="26" REF="29">usair</COREF>
 <COREF ID="27" REF="30">piedmont</COREF>
 <COREF ID="28" REF="33">twa</COREF>
 <COREF ID="29" REF="26">usair</COREF>
 <COREF ID="30" REF="27">piedmont</COREF>
-<COREF ID="31" REF="30">a securities analyst</COREF>
+<COREF ID="31" REF="X3">a securities analyst</COREF>
 <COREF ID="32" REF="34">mr. marckesano</COREF>
 <COREF ID="33" REF="37">twa</COREF>
 <COREF ID="34" REF="24">mr. icahn</COREF>
@@ -29,20 +29,20 @@
 <COREF ID="40" REF="45">department</COREF>
 <COREF ID="42" REF="43">it</COREF>
 <COREF ID="43" REF="42">it</COREF>
-<COREF ID="44" REF="43">serious application</COREF>
+<COREF ID="44" REF="X4">serious application</COREF>
 <COREF ID="45" REF="40">department</COREF>
 <COREF ID="46" REF="155">new filing</COREF>
 <COREF ID="202" REF="51">usair</COREF>
 <COREF ID="50" REF="43">it</COREF>
 <COREF ID="51" REF="202">usair</COREF>
 <COREF ID="52" REF="62">twa</COREF>
-<COREF ID="53" REF="52">tender-offer</COREF>
+<COREF ID="53" REF="X6">tender-offer</COREF>
 <COREF ID="54" REF="51">usair</COREF>
 <COREF ID="55" REF="60">mr. icahn</COREF>
 <COREF ID="56" REF="15">chairman and chief executive officer</COREF>
 <COREF ID="203" REF="58">usair</COREF>
 <COREF ID="58" REF="203">usair</COREF>
-<COREF ID="59" REF="58">the filings</COREF>
+<COREF ID="59" REF="X8">the filings</COREF>
 <COREF ID="60" REF="55">mr. icahn</COREF>
 <COREF ID="61" REF="71">mr. colodny</COREF>
 <COREF ID="62" REF="64">twa</COREF>
@@ -69,7 +69,7 @@
 <COREF ID="85" REF="81">mr. icahn</COREF>
 <COREF ID="86" REF="84">twa's offer for usair</COREF>
 <COREF ID="89" REF="80">he</COREF>
-<COREF ID="90" REF="89">the bid</COREF>
+<COREF ID="90" REF="X9">the bid</COREF>
 <COREF ID="91" REF="84">usair</COREF>
 <COREF ID="92" REF="69">piedmont</COREF>
 <COREF ID="93" REF="85">mr. icahn</COREF>
@@ -108,7 +108,7 @@
 <COREF ID="130" REF="127">usair</COREF>
 <COREF ID="131" REF="114">mr. icahn</COREF>
 <COREF ID="132" REF="129">twa</COREF>
-<COREF ID="133" REF="132">sec</COREF>
+<COREF ID="133" REF="X11">sec</COREF>
 <COREF ID="134" REF="141">its</COREF>
 <COREF ID="135" REF="137">usair</COREF>
 <COREF ID="136" REF="132">twa</COREF>
@@ -118,8 +118,8 @@
 <COREF ID="142" REF="152">the piedmont acquisition</COREF>
 <COREF ID="144" REF="124">the company</COREF>
 <COREF ID="145" REF="151">it</COREF>
-<COREF ID="146" REF="147">bank</COREF>
-<COREF ID="147" REF="146">the purchase</COREF>
+<COREF ID="146" REF="X12">bank</COREF>
+<COREF ID="147" REF="X13">the purchase</COREF>
 <COREF ID="148" REF="150">usair</COREF>
 <COREF ID="149" REF="148">manufacturers hanover</COREF>
 <COREF ID="150" REF="148">usair</COREF>
@@ -127,7 +127,7 @@
 <COREF ID="152" REF="142">the acquisition</COREF>
 <COREF ID="153" REF="151">it</COREF>
 <COREF ID="154" REF="194">the airline</COREF>
-<COREF ID="155" REF="46">the filing</COREF>
+<COREF ID="155" REF="X5">the filing</COREF>
 <COREF ID="156" REF="153">it</COREF>
 <COREF ID="157" REF="128">piedmont</COREF>
 <COREF ID="158" REF="161">usair</COREF>
@@ -138,7 +138,7 @@
 <COREF ID="164" REF="167">usair</COREF>
 <COREF ID="165" REF="163">twa</COREF>
 <COREF ID="167" REF="164">usair</COREF>
-<COREF ID="168" REF="167">the court</COREF>
+<COREF ID="168" REF="X16">the court</COREF>
 <COREF ID="169" REF="165">twa</COREF>
 <COREF ID="170" REF="175">more usair shares</COREF>
 <COREF ID="172" REF="159">usair's tender offer for piedmont stock</COREF>
@@ -168,4 +168,20 @@
 <COREF ID="198" REF="189">it</COREF>
 <COREF ID="199" REF="193">department</COREF>
 <COREF ID="200" REF="199">texas air</COREF>
+<COREF ID="X0" REF="8">another blow</COREF>
+<COREF ID="X1" REF="14">proposed transaction</COREF>
+<COREF ID="X2" REF="25">the attempt</COREF>
+<COREF ID="X3" REF="31">a securities analyst</COREF>
+<COREF ID="X4" REF="44">serious application</COREF>
+<COREF ID="X5" REF="X15">new filing</COREF>
+<COREF ID="X6" REF="53">tender-offer</COREF>
+<COREF ID="X7" REF="159">chairman and chief executive officer</COREF>
+<COREF ID="X8" REF="59">the filings</COREF>
+<COREF ID="X9" REF="90">the bid</COREF>
+<COREF ID="X11" REF="133">sec</COREF>
+<COREF ID="X12" REF="146">bank</COREF>
+<COREF ID="X13" REF="147">the purchase</COREF>
+<COREF ID="X14" REF="152">the acquisition</COREF>
+<COREF ID="X15" REF="X5">the filing</COREF>
+<COREF ID="X16" REF="168">the court</COREF>
 </TXT>

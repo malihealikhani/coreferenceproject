@@ -8,21 +8,21 @@
 <COREF ID="10" REF="53">he</COREF>
 <COREF ID="11" REF="12">his</COREF>
 <COREF ID="12" REF="11">his</COREF>
-<COREF ID="13" REF="12">manager</COREF>
+<COREF ID="13" REF="X0">manager</COREF>
 <COREF ID="15" REF="10">he</COREF>
-<COREF ID="16" REF="15">a real by-the-book guy</COREF>
+<COREF ID="16" REF="X1">a real by-the-book guy</COREF>
 <COREF ID="17" REF="23">reid</COREF>
 <COREF ID="18" REF="17">a broker at the dean witter reynolds office in palo alto</COREF>
 <COREF ID="19" REF="49">president of the half moon bay pilots association</COREF>
-<COREF ID="20" REF="19">a longtime friend</COREF>
+<COREF ID="20" REF="X2">a longtime friend</COREF>
 <COREF ID="22" REF="24">he</COREF>
 <COREF ID="23" REF="25">reid</COREF>
 <COREF ID="24" REF="22">he</COREF>
 <COREF ID="25" REF="23">reid</COREF>
 <COREF ID="26" REF="25">a vietnam veteran</COREF>
 <COREF ID="27" REF="12">his</COREF>
-<COREF ID="28" REF="29">an instructor</COREF>
-<COREF ID="29" REF="28">the plane</COREF>
+<COREF ID="28" REF="X3">an instructor</COREF>
+<COREF ID="29" REF="X4">the plane</COREF>
 <COREF ID="30" REF="29">a 1975 single-engine cessna 177b cardinal</COREF>
 <COREF ID="31" REF="24">he</COREF>
 <COREF ID="32" REF="33">flying</COREF>
@@ -36,16 +36,25 @@
 <COREF ID="40" REF="38">her</COREF>
 <COREF ID="41" REF="39">i</COREF>
 <COREF ID="42" REF="50">he</COREF>
-<COREF ID="43" REF="42">she</COREF>
+<COREF ID="43" REF="X5">she</COREF>
 <COREF ID="44" REF="33">flying</COREF>
 <COREF ID="46" REF="48">reid</COREF>
-<COREF ID="47" REF="46">``an exceptional, competent pilot.''</COREF>
+<COREF ID="47" REF="X6">``an exceptional, competent pilot.''</COREF>
 <COREF ID="48" REF="46">reid</COREF>
 <COREF ID="49" REF="52">half moon bay</COREF>
 <COREF ID="50" REF="42">he</COREF>
 <COREF ID="51" REF="50">a member of the san mateo county airport land use committee</COREF>
 <COREF ID="52" REF="49">chairman of the annual half moon bay fly-in and air show</COREF>
-<COREF ID="57" REF="58">active parishioners</COREF>
+<COREF ID="57" REF="X7">active parishioners</COREF>
 <COREF ID="58" REF="57">they</COREF>
-<COREF ID="62" REF="58">04-12-96</COREF>
+<COREF ID="62" REF="X8">04-12-96</COREF>
+<COREF ID="X0" REF="13">manager</COREF>
+<COREF ID="X1" REF="16">a real by-the-book guy</COREF>
+<COREF ID="X2" REF="20">a longtime friend</COREF>
+<COREF ID="X3" REF="28">an instructor</COREF>
+<COREF ID="X4" REF="29">the plane</COREF>
+<COREF ID="X5" REF="43">she</COREF>
+<COREF ID="X6" REF="47">``an exceptional, competent pilot.''</COREF>
+<COREF ID="X7" REF="57">active parishioners</COREF>
+<COREF ID="X8" REF="62">04-12-96</COREF>
 </TXT>

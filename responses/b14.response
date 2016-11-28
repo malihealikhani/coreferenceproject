@@ -5,14 +5,14 @@
 <COREF ID="14" REF="26">the department</COREF>
 <COREF ID="15" REF="5">these costs</COREF>
 <COREF ID="16" REF="58">they</COREF>
-<COREF ID="17" REF="16">the same as in 1980</COREF>
+<COREF ID="17" REF="X1">the same as in 1980</COREF>
 <COREF ID="26" REF="14">the department</COREF>
-<COREF ID="27" REF="26">it</COREF>
+<COREF ID="27" REF="X2">it</COREF>
 <COREF ID="28" REF="69">the first time</COREF>
 <COREF ID="34" REF="57">wage</COREF>
 <COREF ID="35" REF="13">last year</COREF>
-<COREF ID="36" REF="37">pay</COREF>
-<COREF ID="37" REF="36">1986</COREF>
+<COREF ID="36" REF="X4">pay</COREF>
+<COREF ID="37" REF="X5">1986</COREF>
 <COREF ID="40" REF="5">the life of the settlements</COREF>
 <COREF ID="43" REF="44">the labor department</COREF>
 <COREF ID="44" REF="43">department officials</COREF>
@@ -23,14 +23,29 @@
 <COREF ID="56" REF="62">the payments</COREF>
 <COREF ID="57" REF="63">wage</COREF>
 <COREF ID="58" REF="16">they</COREF>
-<COREF ID="59" REF="58">wages</COREF>
+<COREF ID="59" REF="X9">wages</COREF>
 <COREF ID="60" REF="51">labor</COREF>
 <COREF ID="61" REF="68">last year</COREF>
 <COREF ID="62" REF="56">these payments</COREF>
 <COREF ID="63" REF="57">wage</COREF>
-<COREF ID="64" REF="65">construction</COREF>
-<COREF ID="65" REF="64">1987</COREF>
+<COREF ID="64" REF="X11">construction</COREF>
+<COREF ID="65" REF="X12">1987</COREF>
 <COREF ID="68" REF="61">last year</COREF>
 <COREF ID="69" REF="68">the first contract year</COREF>
 <COREF ID="71" REF="69">agreements reached last year</COREF>
+<COREF ID="X0" REF="15">these costs</COREF>
+<COREF ID="X1" REF="17">the same as in 1980</COREF>
+<COREF ID="X2" REF="27">it</COREF>
+<COREF ID="X3" REF="69">the first time</COREF>
+<COREF ID="X4" REF="36">pay</COREF>
+<COREF ID="X5" REF="37">1986</COREF>
+<COREF ID="X6" REF="40">the life of the settlements</COREF>
+<COREF ID="X7" REF="63">this year's higher wage increases</COREF>
+<COREF ID="X8" REF="44">officials</COREF>
+<COREF ID="X9" REF="59">wages</COREF>
+<COREF ID="X10" REF="62">these payments</COREF>
+<COREF ID="X11" REF="64">construction</COREF>
+<COREF ID="X12" REF="65">1987</COREF>
+<COREF ID="X13" REF="X14">the first contract year</COREF>
+<COREF ID="X14" REF="X13">agreements reached last year</COREF>
 </TXT>

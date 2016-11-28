@@ -2,13 +2,13 @@
 <COREF ID="1" REF="3">he</COREF>
 <COREF ID="2" REF="8">president reagan</COREF>
 <COREF ID="3" REF="1">he</COREF>
-<COREF ID="4" REF="3">a strategic arms agreement</COREF>
+<COREF ID="4" REF="X0">a strategic arms agreement</COREF>
 <COREF ID="26" REF="19">their summit</COREF>
-<COREF ID="7" REF="26">here</COREF>
+<COREF ID="7" REF="X2">here</COREF>
 <COREF ID="8" REF="12">mr. reagan</COREF>
 <COREF ID="11" REF="24">a treaty</COREF>
 <COREF ID="12" REF="8">mr. reagan</COREF>
-<COREF ID="13" REF="12">his</COREF>
+<COREF ID="13" REF="X4">his</COREF>
 <COREF ID="14" REF="12">mr. reagan</COREF>
 <COREF ID="15" REF="21">he</COREF>
 <COREF ID="16" REF="14">mr. gorbachev</COREF>
@@ -20,5 +20,11 @@
 <COREF ID="27" REF="23">we</COREF>
 <COREF ID="28" REF="25">the other one at the washington summit</COREF>
 <COREF ID="31" REF="14">mr. reagan</COREF>
-<COREF ID="32" REF="31">it</COREF>
+<COREF ID="32" REF="X5">it</COREF>
+<COREF ID="X0" REF="4">a strategic arms agreement</COREF>
+<COREF ID="X1" REF="28">their summit</COREF>
+<COREF ID="X2" REF="7">here</COREF>
+<COREF ID="X3" REF="24">a treaty</COREF>
+<COREF ID="X4" REF="13">his</COREF>
+<COREF ID="X5" REF="32">it</COREF>
 </TXT>

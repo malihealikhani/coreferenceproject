@@ -4,7 +4,7 @@
 <COREF ID="3" REF="11">clerical and operations staff members</COREF>
 <COREF ID="4" REF="11">union</COREF>
 <COREF ID="5" REF="1">the mediator</COREF>
-<COREF ID="7" REF="8">talks</COREF>
+<COREF ID="7" REF="X2">talks</COREF>
 <COREF ID="8" REF="7">the spokesman</COREF>
 <COREF ID="9" REF="12">the exchange</COREF>
 <COREF ID="10" REF="9">the workers</COREF>
@@ -17,4 +17,7 @@
 <COREF ID="18" REF="1">federal mediation and conciliation service</COREF>
 <COREF ID="19" REF="20">the union</COREF>
 <COREF ID="20" REF="19">the union</COREF>
+<COREF ID="X0" REF="11">clerical and operations staff members</COREF>
+<COREF ID="X1" REF="20">union</COREF>
+<COREF ID="X2" REF="7">talks</COREF>
 </TXT>

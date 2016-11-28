@@ -4,15 +4,15 @@
 <COREF ID="6" REF="29">a new contract offer</COREF>
 <COREF ID="9" REF="14">negotiations</COREF>
 <COREF ID="10" REF="38">yesterday</COREF>
-<COREF ID="11" REF="12">the day</COREF>
-<COREF ID="12" REF="11">their</COREF>
+<COREF ID="11" REF="X1">the day</COREF>
+<COREF ID="12" REF="X2">their</COREF>
 <COREF ID="13" REF="15">union</COREF>
 <COREF ID="14" REF="9">negotiations</COREF>
 <COREF ID="15" REF="13">union</COREF>
-<COREF ID="16" REF="15">a settlement</COREF>
+<COREF ID="16" REF="X3">a settlement</COREF>
 <COREF ID="18" REF="15">the 57-year-old union leader</COREF>
 <COREF ID="20" REF="23">mr. bieber</COREF>
-<COREF ID="21" REF="20">the source</COREF>
+<COREF ID="21" REF="X4">the source</COREF>
 <COREF ID="22" REF="28">he</COREF>
 <COREF ID="23" REF="20">mr. bieber</COREF>
 <COREF ID="24" REF="14">negotiations</COREF>
@@ -32,11 +32,11 @@
 <COREF ID="41" REF="37">tuesday</COREF>
 <COREF ID="42" REF="69">a company</COREF>
 <COREF ID="44" REF="39">the union</COREF>
-<COREF ID="45" REF="47">the adjustments</COREF>
+<COREF ID="45" REF="X9">the adjustments</COREF>
 <COREF ID="47" REF="45">william fisher</COREF>
 <COREF ID="48" REF="54">yesterday</COREF>
-<COREF ID="50" REF="51">we</COREF>
-<COREF ID="51" REF="50">the end of the week</COREF>
+<COREF ID="50" REF="X10">we</COREF>
+<COREF ID="51" REF="X11">the end of the week</COREF>
 <COREF ID="52" REF="28">he</COREF>
 <COREF ID="53" REF="36">mr. white</COREF>
 <COREF ID="54" REF="48">yesterday</COREF>
@@ -44,10 +44,10 @@
 <COREF ID="56" REF="78">caw</COREF>
 <COREF ID="57" REF="61">chrysler</COREF>
 <COREF ID="58" REF="32">the pension issue</COREF>
-<COREF ID="60" REF="10">today</COREF>
+<COREF ID="60" REF="X13">today</COREF>
 <COREF ID="61" REF="57">chrysler</COREF>
 <COREF ID="62" REF="101">a contract</COREF>
-<COREF ID="63" REF="62">this weekend</COREF>
+<COREF ID="63" REF="X15">this weekend</COREF>
 <COREF ID="64" REF="44">the union</COREF>
 <COREF ID="65" REF="26">the striking workers</COREF>
 <COREF ID="66" REF="61">chrysler</COREF>
@@ -57,7 +57,7 @@
 <COREF ID="70" REF="76">the canadian strike</COREF>
 <COREF ID="71" REF="66">chrysler</COREF>
 <COREF ID="73" REF="77">the plant</COREF>
-<COREF ID="75" REF="73">they</COREF>
+<COREF ID="75" REF="X20">they</COREF>
 <COREF ID="76" REF="70">the strike</COREF>
 <COREF ID="77" REF="73">that plant</COREF>
 <COREF ID="78" REF="56">caw</COREF>
@@ -76,8 +76,8 @@
 <COREF ID="96" REF="90">ford</COREF>
 <COREF ID="97" REF="98">the company</COREF>
 <COREF ID="98" REF="97">the company</COREF>
-<COREF ID="99" REF="98">the two sides</COREF>
-<COREF ID="101" REF="62">the contract</COREF>
+<COREF ID="99" REF="X23">the two sides</COREF>
+<COREF ID="101" REF="X0">the contract</COREF>
 <COREF ID="102" REF="106">monday</COREF>
 <COREF ID="103" REF="64">the union</COREF>
 <COREF ID="104" REF="25">uaw</COREF>
@@ -90,4 +90,29 @@
 <COREF ID="111" REF="88">yesterday</COREF>
 <COREF ID="112" REF="109">chrysler</COREF>
 <COREF ID="113" REF="108">ford</COREF>
+<COREF ID="X0" REF="X5">a new contract offer</COREF>
+<COREF ID="X1" REF="11">the day</COREF>
+<COREF ID="X2" REF="12">their</COREF>
+<COREF ID="X3" REF="16">a settlement</COREF>
+<COREF ID="X4" REF="21">the source</COREF>
+<COREF ID="X5" REF="X0">the new offer</COREF>
+<COREF ID="X6" REF="X12">inflation-indexed pension payments</COREF>
+<COREF ID="X7" REF="85">the talks</COREF>
+<COREF ID="X8" REF="X18">a company</COREF>
+<COREF ID="X9" REF="45">the adjustments</COREF>
+<COREF ID="X10" REF="50">we</COREF>
+<COREF ID="X11" REF="51">the end of the week</COREF>
+<COREF ID="X12" REF="X6">the pension issue</COREF>
+<COREF ID="X13" REF="60">today</COREF>
+<COREF ID="X14" REF="X24">a contract</COREF>
+<COREF ID="X15" REF="63">this weekend</COREF>
+<COREF ID="X16" REF="65">the striking workers</COREF>
+<COREF ID="X17" REF="X5">a new pact</COREF>
+<COREF ID="X18" REF="X8">company</COREF>
+<COREF ID="X19" REF="77">the plant</COREF>
+<COREF ID="X20" REF="75">they</COREF>
+<COREF ID="X21" REF="76">the strike</COREF>
+<COREF ID="X22" REF="X12">the job-security issue</COREF>
+<COREF ID="X23" REF="99">the two sides</COREF>
+<COREF ID="X24" REF="X14">the contract</COREF>
 </TXT>

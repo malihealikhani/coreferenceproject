@@ -6,21 +6,32 @@
 <COREF ID="11" REF="4">the attendants</COREF>
 <COREF ID="12" REF="9">union</COREF>
 <COREF ID="13" REF="15">northwest</COREF>
-<COREF ID="14" REF="13">strike</COREF>
+<COREF ID="14" REF="X2">strike</COREF>
 <COREF ID="15" REF="13">northwest</COREF>
 <COREF ID="16" REF="31">the union</COREF>
-<COREF ID="17" REF="24">a teamsters chapter</COREF>
-<COREF ID="24" REF="17">walkout</COREF>
+<COREF ID="17" REF="16">a teamsters chapter</COREF>
+<COREF ID="24" REF="X3">walkout</COREF>
 <COREF ID="25" REF="28">union leaders</COREF>
-<COREF ID="26" REF="25">the meeting</COREF>
+<COREF ID="26" REF="X5">the meeting</COREF>
 <COREF ID="28" REF="31">northwest's largest union</COREF>
 <COREF ID="31" REF="16">the union</COREF>
-<COREF ID="32" REF="33">holiday</COREF>
-<COREF ID="33" REF="32">we</COREF>
+<COREF ID="32" REF="X6">holiday</COREF>
+<COREF ID="33" REF="X7">we</COREF>
 <COREF ID="34" REF="35">they</COREF>
 <COREF ID="35" REF="34">they</COREF>
-<COREF ID="36" REF="37">themselves</COREF>
-<COREF ID="37" REF="36">he</COREF>
-<COREF ID="38" REF="31">the attendants union</COREF>
-<COREF ID="40" REF="38">the company</COREF>
+<COREF ID="36" REF="X8">themselves</COREF>
+<COREF ID="37" REF="X9">he</COREF>
+<COREF ID="38" REF="X0">the attendants union</COREF>
+<COREF ID="40" REF="X10">the company</COREF>
+<COREF ID="X0" REF="38">the attendants</COREF>
+<COREF ID="X1" REF="38">union</COREF>
+<COREF ID="X2" REF="14">strike</COREF>
+<COREF ID="X3" REF="24">walkout</COREF>
+<COREF ID="X4" REF="X1">union leaders</COREF>
+<COREF ID="X5" REF="26">the meeting</COREF>
+<COREF ID="X6" REF="32">holiday</COREF>
+<COREF ID="X7" REF="33">we</COREF>
+<COREF ID="X8" REF="36">themselves</COREF>
+<COREF ID="X9" REF="37">he</COREF>
+<COREF ID="X10" REF="40">the company</COREF>
 </TXT>
