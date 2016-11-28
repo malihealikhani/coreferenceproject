@@ -457,10 +457,10 @@ def checkNotTagged(coref,notref):
             words = coref[i][1]
             #print "words is: " + words
             words = words.split()
-            print len(words)
+            #print len(words)
             if len(words) > 1:
                 for word in words:
-                    print "word is: " + word
+                    #print "word is: " + word
                     if not (word in skip):
                         inText = notref.find(word)
 
