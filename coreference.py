@@ -136,8 +136,8 @@ def coreference(f):
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
     coref = checkExactMatchNoS(coref)
-    coref = checkDateMatch(coref,no_coref)
-    coref = checkNotTagged(coref,no_coref)
+    coref = checkDateMatch(coref)
+    coref = checkNotTagged(coref,notref)
     coref = check_appositive(coref)
     coref = addDefault(coref)
 
