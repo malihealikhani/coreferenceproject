@@ -1,28 +1,28 @@
 <TXT>
-<COREF ID="3" REF="3">i</COREF>
-<COREF ID="6">ual's chief executive officer</COREF>
+<COREF ID="3" REF="6">i</COREF>
+<COREF ID="6" REF="3">ual's chief executive officer</COREF>
 <COREF ID="8" REF="40">the ual board</COREF>
 <COREF ID="10" REF="20">mr. ferris</COREF>
 <COREF ID="11" REF="12">his</COREF>
 <COREF ID="12" REF="11">his</COREF>
 <COREF ID="14" REF="70">it</COREF>
 <COREF ID="15" REF="34">the journal article</COREF>
-<COREF ID="18" REF="15">westin hotels</COREF>
+<COREF ID="18" REF="19">westin hotels</COREF>
 <COREF ID="19" REF="18">hertz</COREF>
 <COREF ID="20" REF="10">mr. ferris</COREF>
 <COREF ID="21" REF="76">the directors</COREF>
 <COREF ID="23" REF="26">we</COREF>
-<COREF ID="24" REF="11">his</COREF>
+<COREF ID="24" REF="12">his</COREF>
 <COREF ID="25" REF="59">them</COREF>
 <COREF ID="26" REF="23">we</COREF>
 <COREF ID="27" REF="90">our</COREF>
-<COREF ID="28" REF="10">mr. ferris</COREF>
+<COREF ID="28" REF="37">mr. ferris</COREF>
 <COREF ID="29" REF="36">president of united</COREF>
-<COREF ID="31" REF="29">its earnings</COREF>
+<COREF ID="31" REF="33">its earnings</COREF>
 <COREF ID="33" REF="31">the airline</COREF>
 <COREF ID="34" REF="15">your article</COREF>
 <COREF ID="36" REF="58">united</COREF>
-<COREF ID="37" REF="10">mr. ferris</COREF>
+<COREF ID="37" REF="28">mr. ferris</COREF>
 <COREF ID="38" REF="37">independent counsel</COREF>
 <COREF ID="40" REF="42">ual</COREF>
 <COREF ID="41" REF="40">he</COREF>
@@ -32,38 +32,38 @@
 <COREF ID="48" REF="44">these</COREF>
 <COREF ID="49" REF="67">pilots</COREF>
 <COREF ID="56" REF="49">the trainees</COREF>
-<COREF ID="58" REF="36">united</COREF>
-<COREF ID="59" REF="25">them</COREF>
+<COREF ID="58" REF="62">united</COREF>
+<COREF ID="59" REF="81">them</COREF>
 <COREF ID="60" REF="78">the strike</COREF>
 <COREF ID="61" REF="67">the 570 individuals</COREF>
-<COREF ID="62" REF="36">united</COREF>
+<COREF ID="62" REF="64">united</COREF>
 <COREF ID="63" REF="73">they</COREF>
-<COREF ID="64" REF="36">united</COREF>
+<COREF ID="64" REF="62">united</COREF>
 <COREF ID="65" REF="64">the district court</COREF>
-<COREF ID="66" REF="36">united</COREF>
+<COREF ID="66" REF="64">united</COREF>
 <COREF ID="67" REF="71">the 570 pilots</COREF>
-<COREF ID="68" REF="36">united</COREF>
+<COREF ID="68" REF="66">united</COREF>
 <COREF ID="69" REF="68">its</COREF>
 <COREF ID="70" REF="14">it</COREF>
 <COREF ID="71" REF="67">the 570 pilots</COREF>
 <COREF ID="73" REF="63">they</COREF>
-<COREF ID="74" REF="36">united</COREF>
-<COREF ID="75" REF="10">mr. ferris</COREF>
-<COREF ID="76" REF="8">the board of directors</COREF>
+<COREF ID="74" REF="68">united</COREF>
+<COREF ID="75" REF="37">mr. ferris</COREF>
+<COREF ID="76" REF="21">the board of directors</COREF>
 <COREF ID="78" REF="60">the 1985 pilot strike</COREF>
-<COREF ID="81" REF="25">them</COREF>
-<COREF ID="82" REF="25">them</COREF>
-<COREF ID="83" REF="23">we</COREF>
-<COREF ID="84" REF="49">our pilots</COREF>
-<COREF ID="85" REF="23">we</COREF>
+<COREF ID="81" REF="82">them</COREF>
+<COREF ID="82" REF="81">them</COREF>
+<COREF ID="83" REF="85">we</COREF>
+<COREF ID="84" REF="71">our pilots</COREF>
+<COREF ID="85" REF="83">we</COREF>
 <COREF ID="86" REF="85">their</COREF>
-<COREF ID="87" REF="23">we</COREF>
-<COREF ID="88" REF="63">they</COREF>
+<COREF ID="87" REF="85">we</COREF>
+<COREF ID="88" REF="73">they</COREF>
 <COREF ID="89" REF="88">us</COREF>
 <COREF ID="90" REF="27">our</COREF>
-<COREF ID="91" REF="36">united</COREF>
+<COREF ID="91" REF="74">united</COREF>
 <COREF ID="92" REF="91">charled f. luce</COREF>
-<COREF ID="93" REF="40">ual</COREF>
+<COREF ID="93" REF="95">ual</COREF>
 <COREF ID="94" REF="43">the century plaza</COREF>
-<COREF ID="95" REF="40">ual</COREF>
+<COREF ID="95" REF="93">ual</COREF>
 </TXT>

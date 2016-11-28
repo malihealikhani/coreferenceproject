@@ -11,48 +11,48 @@
 <COREF ID="12" REF="74">the plant</COREF>
 <COREF ID="13" REF="40">energy</COREF>
 <COREF ID="17" REF="8">plutonium</COREF>
-<COREF ID="18" REF="17">a highly radioactive element</COREF>
+<COREF ID="18" REF="20">a highly radioactive element</COREF>
 <COREF ID="20" REF="18">one chance in 10 million</COREF>
 <COREF ID="21" REF="11">flight</COREF>
-<COREF ID="22" REF="21">this year</COREF>
+<COREF ID="22" REF="23">this year</COREF>
 <COREF ID="23" REF="22">a safety board</COREF>
 <COREF ID="24" REF="23">trish neusch</COREF>
 <COREF ID="26" REF="65">amarillo</COREF>
 <COREF ID="27" REF="43">the airport</COREF>
 <COREF ID="28" REF="27">there</COREF>
 <COREF ID="29" REF="68">these planes</COREF>
-<COREF ID="30" REF="9">the faa air traffic manager</COREF>
-<COREF ID="34" REF="30">a ``manual count on a pad,''</COREF>
+<COREF ID="30" REF="50">the faa air traffic manager</COREF>
+<COREF ID="34" REF="35">a ``manual count on a pad,''</COREF>
 <COREF ID="35" REF="34">that 60-day accounting</COREF>
 <COREF ID="36" REF="29">25 planes a day</COREF>
 <COREF ID="39" REF="1">pantex</COREF>
 <COREF ID="40" REF="13">the energy department</COREF>
-<COREF ID="41" REF="8">plutonium</COREF>
-<COREF ID="42" REF="7">the former weapons assembly plant</COREF>
-<COREF ID="43" REF="26">the amarillo airport</COREF>
+<COREF ID="41" REF="17">plutonium</COREF>
+<COREF ID="42" REF="12">the former weapons assembly plant</COREF>
+<COREF ID="43" REF="50">the amarillo airport</COREF>
 <COREF ID="45" REF="56">mcnulty</COREF>
-<COREF ID="47" REF="29">military planes</COREF>
+<COREF ID="47" REF="36">military planes</COREF>
 <COREF ID="48" REF="47">texas</COREF>
 <COREF ID="49" REF="59">he</COREF>
-<COREF ID="50" REF="27">about 25 percent of the airport traffic</COREF>
-<COREF ID="53" REF="8">a flight pattern over the plutonium storage bunkers</COREF>
+<COREF ID="50" REF="57">about 25 percent of the airport traffic</COREF>
+<COREF ID="53" REF="79">a flight pattern over the plutonium storage bunkers</COREF>
 <COREF ID="56" REF="45">mcnulty</COREF>
-<COREF ID="57" REF="30">air traffic controllers</COREF>
+<COREF ID="57" REF="50">air traffic controllers</COREF>
 <COREF ID="79" REF="53">the bunkers</COREF>
-<COREF ID="59" REF="49">he</COREF>
-<COREF ID="60" REF="27">airport</COREF>
+<COREF ID="59" REF="63">he</COREF>
+<COREF ID="60" REF="50">airport</COREF>
 <COREF ID="61" REF="53">the nuclear storage area</COREF>
-<COREF ID="62" REF="45">mcnulty</COREF>
-<COREF ID="63" REF="49">he</COREF>
+<COREF ID="62" REF="67">mcnulty</COREF>
+<COREF ID="63" REF="66">he</COREF>
 <COREF ID="64" REF="63">vortac</COREF>
 <COREF ID="65" REF="26">amarillo</COREF>
-<COREF ID="66" REF="49">he</COREF>
-<COREF ID="67" REF="45">mcnulty</COREF>
+<COREF ID="66" REF="63">he</COREF>
+<COREF ID="67" REF="62">mcnulty</COREF>
 <COREF ID="68" REF="29">these planes</COREF>
-<COREF ID="69" REF="8">the plutonium area</COREF>
+<COREF ID="69" REF="61">the plutonium area</COREF>
 <COREF ID="73" REF="69">oklahoma</COREF>
 <COREF ID="74" REF="12">the plant</COREF>
-<COREF ID="75" REF="45">mcnulty</COREF>
-<COREF ID="76" REF="75">they</COREF>
+<COREF ID="75" REF="67">mcnulty</COREF>
+<COREF ID="76" REF="77">they</COREF>
 <COREF ID="77" REF="76">02-14-96</COREF>
 </TXT>

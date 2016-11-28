@@ -8,6 +8,6 @@
 <COREF ID="10" REF="8">the company</COREF>
 <COREF ID="11" REF="17">the unions</COREF>
 <COREF ID="12" REF="11">the accord</COREF>
-<COREF ID="14" REF="1">western union</COREF>
-<COREF ID="16" REF="8">company</COREF>
+<COREF ID="14" REF="3">western union</COREF>
+<COREF ID="16" REF="10">company</COREF>
 </TXT>

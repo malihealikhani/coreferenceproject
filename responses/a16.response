@@ -1,0 +1,36 @@
+<TXT>
+<COREF ID="1">aircrash</COREF>
+<COREF ID="2" REF="4">china</COREF>
+<COREF ID="40" REF="26">helo crash</COREF>
+<COREF ID="4" REF="2">china</COREF>
+<COREF ID="5" REF="31">two chinese crew members</COREF>
+<COREF ID="8" REF="16">macau</COREF>
+<COREF ID="9" REF="10">aircraft</COREF>
+<COREF ID="10" REF="9">its</COREF>
+<COREF ID="11" REF="13">it</COREF>
+<COREF ID="13" REF="11">the helicopter</COREF>
+<COREF ID="14" REF="37">the incident</COREF>
+<COREF ID="16" REF="8">macau</COREF>
+<COREF ID="17" REF="18">the search</COREF>
+<COREF ID="18" REF="17">the sikorsky 76</COREF>
+<COREF ID="19" REF="18">mainland</COREF>
+<COREF ID="20" REF="38">the department</COREF>
+<COREF ID="21" REF="20">daiwaishan</COREF>
+<COREF ID="22" REF="27">the island</COREF>
+<COREF ID="23" REF="30">zhuhai</COREF>
+<COREF ID="24" REF="28">macau</COREF>
+<COREF ID="25" REF="35">china</COREF>
+<COREF ID="26" REF="32">the crash</COREF>
+<COREF ID="27" REF="22">the island</COREF>
+<COREF ID="28" REF="24">macau</COREF>
+<COREF ID="29" REF="28">the pilots</COREF>
+<COREF ID="30" REF="23">zhuhai</COREF>
+<COREF ID="31" REF="5">the crew</COREF>
+<COREF ID="32" REF="26">the likely cause of the crash</COREF>
+<COREF ID="34" REF="32">the time</COREF>
+<COREF ID="35" REF="25">china</COREF>
+<COREF ID="36" REF="35">the country of registration</COREF>
+<COREF ID="37" REF="14">the incident</COREF>
+<COREF ID="38" REF="20">civil aviation department</COREF>
+<COREF ID="39" REF="38">04-09-96</COREF>
+</TXT>

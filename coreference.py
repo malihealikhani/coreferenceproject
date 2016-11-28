@@ -109,7 +109,16 @@ def coreference(f):
     # sytactic heuristics
     # semantic compatability
 
-    return format_output(addDefault(checkDateMatch(checkExactMatchNoS(checkPartialMatch(checkAcronym(checkExactMatch(coref)))))))
+    coref = checkExactMatch(coref)
+    coref = checkAcronym(coref)
+    coref = checkPartialMatch(coref)
+    coref = checkExactMatchNoS(coref)
+    coref = check_appositive(coref)
+    coref = checkDateMatch(coref)
+    coref = addDefault(coref)
+    coref = checkExactMatch(coref)
+
+    return format_output(coref)
 ################################################################################
 #
 # Create coref
@@ -176,6 +185,17 @@ def checkExactMatch(coref):
                     break       
     return coref
 
+################################################################################
+#
+# Check Exact Match no 's
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and some ref id's
+# Notes: This finds all the exact matches in a corpus and adds the ref id to coref
+#        It searches for matches starting at the coref closest and moves out
+#
+################################################################################
+
 
 def checkExactMatchNoS(coref):
     cnt = 0
@@ -215,6 +235,28 @@ def checkExactMatchNoS(coref):
                     break
             
     return coref
+
+
+################################################################################
+#
+# Check Appositive Adjacent
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and some ref id's
+# Notes: This checks acronyms against all possible matches and adds ref id to coref
+#
+################################################################################
+
+def check_appositive(coref):
+    for i in range(len(coref)):
+        if len(coref[i]) == 2:
+            if i+2 <= len(coref):
+                if len(coref[i+1]) == 2:
+                    coref[i].append(coref[i+1][0])
+                    coref[i+1].append(coref[i][0])
+
+    return coref
+
 
 ################################################################################
 #

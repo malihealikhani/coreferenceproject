@@ -1,0 +1,51 @@
+<TXT>
+<COREF ID="1">flight-instructo</COREF>
+<COREF ID="2" REF="17">reid</COREF>
+<COREF ID="3" REF="2">flight-instructor</COREF>
+<COREF ID="4" REF="6">joe reid</COREF>
+<COREF ID="6" REF="4">joe reid</COREF>
+<COREF ID="53" REF="10">he</COREF>
+<COREF ID="10" REF="53">he</COREF>
+<COREF ID="11" REF="12">his</COREF>
+<COREF ID="12" REF="11">his</COREF>
+<COREF ID="13" REF="12">manager</COREF>
+<COREF ID="15" REF="10">he</COREF>
+<COREF ID="16" REF="15">a real by-the-book guy</COREF>
+<COREF ID="17" REF="23">reid</COREF>
+<COREF ID="18" REF="17">a broker at the dean witter reynolds office in palo alto</COREF>
+<COREF ID="19" REF="49">president of the half moon bay pilots association</COREF>
+<COREF ID="20" REF="19">a longtime friend</COREF>
+<COREF ID="22" REF="24">he</COREF>
+<COREF ID="23" REF="25">reid</COREF>
+<COREF ID="24" REF="22">he</COREF>
+<COREF ID="25" REF="23">reid</COREF>
+<COREF ID="26" REF="25">a vietnam veteran</COREF>
+<COREF ID="27" REF="12">his</COREF>
+<COREF ID="28" REF="29">an instructor</COREF>
+<COREF ID="29" REF="28">the plane</COREF>
+<COREF ID="30" REF="29">a 1975 single-engine cessna 177b cardinal</COREF>
+<COREF ID="31" REF="24">he</COREF>
+<COREF ID="32" REF="33">flying</COREF>
+<COREF ID="33" REF="32">flying</COREF>
+<COREF ID="34" REF="33">auld</COREF>
+<COREF ID="35" REF="6">joe</COREF>
+<COREF ID="36" REF="46">reid</COREF>
+<COREF ID="37" REF="36">jessica</COREF>
+<COREF ID="38" REF="40">her</COREF>
+<COREF ID="39" REF="41">i</COREF>
+<COREF ID="40" REF="38">her</COREF>
+<COREF ID="41" REF="39">i</COREF>
+<COREF ID="42" REF="50">he</COREF>
+<COREF ID="43" REF="42">she</COREF>
+<COREF ID="44" REF="33">flying</COREF>
+<COREF ID="46" REF="48">reid</COREF>
+<COREF ID="47" REF="46">``an exceptional, competent pilot.''</COREF>
+<COREF ID="48" REF="46">reid</COREF>
+<COREF ID="49" REF="52">half moon bay</COREF>
+<COREF ID="50" REF="42">he</COREF>
+<COREF ID="51" REF="50">a member of the san mateo county airport land use committee</COREF>
+<COREF ID="52" REF="49">chairman of the annual half moon bay fly-in and air show</COREF>
+<COREF ID="57" REF="58">active parishioners</COREF>
+<COREF ID="58" REF="57">they</COREF>
+<COREF ID="62" REF="58">04-12-96</COREF>
+</TXT>

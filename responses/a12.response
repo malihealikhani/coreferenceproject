@@ -4,21 +4,21 @@
 <COREF ID="3" REF="1">ntsb</COREF>
 <COREF ID="6" REF="39">a boeing 737</COREF>
 <COREF ID="9" REF="23">its investigation</COREF>
-<COREF ID="11" REF="9">the museum's aircraft</COREF>
+<COREF ID="11" REF="13">the museum's aircraft</COREF>
 <COREF ID="13" REF="11">the airplane that crashed</COREF>
 <COREF ID="14" REF="45">the board</COREF>
 <COREF ID="16" REF="44">flight 427</COREF>
 <COREF ID="17" REF="54">its</COREF>
 <COREF ID="18" REF="46">pittsburgh</COREF>
-<COREF ID="19" REF="18">the movable vertical piece in the plane's tail</COREF>
+<COREF ID="19" REF="21">the movable vertical piece in the plane's tail</COREF>
 <COREF ID="21" REF="19">the jet</COREF>
 <COREF ID="23" REF="9">investigation</COREF>
-<COREF ID="24" REF="23">seattle</COREF>
+<COREF ID="24" REF="26">seattle</COREF>
 <COREF ID="26" REF="24">hall</COREF>
 <COREF ID="27" REF="43">benson</COREF>
 <COREF ID="28" REF="41">investigators</COREF>
 <COREF ID="29" REF="42">the 737's rudder</COREF>
-<COREF ID="31" REF="29">we</COREF>
+<COREF ID="31" REF="32">we</COREF>
 <COREF ID="32" REF="31">he</COREF>
 <COREF ID="37" REF="49">the plane</COREF>
 <COREF ID="38" REF="59">the crash</COREF>
@@ -27,19 +27,19 @@
 <COREF ID="41" REF="28">investigators</COREF>
 <COREF ID="42" REF="29">rudder and pedal position</COREF>
 <COREF ID="43" REF="27">benson</COREF>
-<COREF ID="44" REF="16">improved flight recorders</COREF>
+<COREF ID="44" REF="48">improved flight recorders</COREF>
 <COREF ID="45" REF="14">the board</COREF>
-<COREF ID="46" REF="2">pittsburgh crash</COREF>
-<COREF ID="48" REF="16">museum of flight</COREF>
+<COREF ID="46" REF="38">pittsburgh crash</COREF>
+<COREF ID="48" REF="44">museum of flight</COREF>
 <COREF ID="49" REF="37">the plane</COREF>
-<COREF ID="50" REF="1">ntsb</COREF>
-<COREF ID="51" REF="37">an intact plane on which to conduct tests</COREF>
+<COREF ID="50" REF="57">ntsb</COREF>
+<COREF ID="51" REF="49">an intact plane on which to conduct tests</COREF>
 <COREF ID="53" REF="48">the museum</COREF>
 <COREF ID="54" REF="17">its</COREF>
 <COREF ID="55" REF="51">the tests</COREF>
-<COREF ID="57" REF="1">ntsb</COREF>
+<COREF ID="57" REF="50">ntsb</COREF>
 <COREF ID="58" REF="57">last september</COREF>
 <COREF ID="59" REF="38">the crash</COREF>
-<COREF ID="60" REF="27">benson</COREF>
+<COREF ID="60" REF="43">benson</COREF>
 <COREF ID="61" REF="60">02-27-96</COREF>
 </TXT>

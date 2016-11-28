@@ -1,0 +1,31 @@
+<TXT>
+<COREF ID="1" REF="26">aeroflot</COREF>
+<COREF ID="2" REF="3">families</COREF>
+<COREF ID="3" REF="2">families</COREF>
+<COREF ID="6" REF="1">the russian airline aeroflot</COREF>
+<COREF ID="7" REF="3">the families</COREF>
+<COREF ID="12" REF="23">it</COREF>
+<COREF ID="15" REF="38">he</COREF>
+<COREF ID="16" REF="17">the writ</COREF>
+<COREF ID="17" REF="16">the writ</COREF>
+<COREF ID="19" REF="17">the moscow airbus a310 flight</COREF>
+<COREF ID="22" REF="39">hong kong</COREF>
+<COREF ID="23" REF="29">it</COREF>
+<COREF ID="24" REF="25">the deaths</COREF>
+<COREF ID="25" REF="24">the defendant</COREF>
+<COREF ID="26" REF="1">aeroflot</COREF>
+<COREF ID="27" REF="22">the hong kong-bound aircraft</COREF>
+<COREF ID="29" REF="23">it</COREF>
+<COREF ID="31" REF="32">eldar</COREF>
+<COREF ID="32" REF="31">his 13-year-old sister</COREF>
+<COREF ID="35" REF="37">passengers</COREF>
+<COREF ID="37" REF="35">the managing director</COREF>
+<COREF ID="38" REF="15">he</COREF>
+<COREF ID="39" REF="41">hong kong</COREF>
+<COREF ID="40" REF="29">it</COREF>
+<COREF ID="41" REF="39">hong kong</COREF>
+<COREF ID="42" REF="43">mr miller</COREF>
+<COREF ID="43" REF="42">the writs</COREF>
+<COREF ID="44" REF="41">family members who live outside hong kong</COREF>
+<COREF ID="46" REF="44">03-27-96</COREF>
+</TXT>
