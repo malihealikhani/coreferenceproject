@@ -129,13 +129,13 @@ def coreference(f):
     #coref = checkDateMatch(coref)
     #coref = addDefault(coref)
     
-    #Order 2 has accuracy of 0.6364
+    #Order 2 has accuracy of 0.6515
     coref = checkExactMatch(coref)
-    coref= checkPronouns(coref)
+    coref = checkPronouns(coref)
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
     coref = checkExactMatchNoS(coref)
-    coref = checkDateMatch(coref)
+    coref = checkDateMatch(coref,notref)
     coref = checkNotTagged(coref,notref)
     coref = check_appositive(coref)
     coref = addDefault(coref)
@@ -344,7 +344,6 @@ def checkAcronym(coref):
 #
 ################################################################################
 
-
 def checkPartialMatch(coref):
     #from nltk.corpus import stopwords
     stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours',
@@ -396,7 +395,6 @@ def checkPartialMatch(coref):
                                         coref[i].append(coref[k][0])
     return coref
 
-
 ################################################################################
 #
 # Add Default
@@ -418,12 +416,6 @@ def addDefault(coref):
                     j = coref[i-1][0]
                     coref[i].append(j)
     return coref
-
-
-
-
-
-
 
 ################################################################################
 #
@@ -453,33 +445,22 @@ def checkNotTagged(coref,notref):
         found = False
         if len(coref[i]) is 2:
             words = coref[i][1]
-            #print "words is: " + words
             words = words.split()
-            #print len(words)
-            if len(words) > 1:
-                for word in words:
-                    #print "word is: " + word
-                    if not (word.lower() in skip):
-                        inText = notref.lower().find(word.lower())
+            l = len(words)
+            lastword = words[l-1]
+            
+            inText = notref.lower().find(lastword.lower())
 
-                        if inText > 0:
-                            found = True
+            if inText > 0:
+                found = True
+            
+            if found == True:
+
+                match = notref[inText:inText+len(lastword)]
                 
-                if found == True:
-                    coref.append(['X' + str(cnt), word])
-                    coref[i].append('X' + str(cnt))
-                    cnt = cnt + 1
-            else:
-                #print "just one word and it is: " + words
-                word1 = words[0]
-                word2 = words[0].lower()
-                if not (word2 in skip):
-                        inText = notref.lower().find(word2)
-
-                        if inText > 0:
-                            coref.append(['X' + str(cnt), word1])
-                            coref[i].append('X' + str(cnt))
-                            cnt = cnt + 1
+                coref.append(['X' + str(cnt), match])
+                coref[i].append('X' + str(cnt))
+                cnt = cnt + 1
 
     return coref
 
@@ -494,33 +475,49 @@ def checkNotTagged(coref,notref):
 #
 ################################################################################
 
-
-def checkDateMatch(coref):
-    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "today", "tomorrow",
-            "yesterday"]
+def checkDateMatch(coref,notref):
+    days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday", "today", "tomorrow","yesterday"]
+    cnt = 1
     for i in range(len(coref)):
         for j in range(len(coref)):
             if i != j:
                 w1date = False
                 w2date = False
+                short = False
+                w1short = ""
                 word1 = coref[i][1].lower()
                 word2 = coref[j][1].lower()
                 
-                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?', word1)
+                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})',word1)
+                if word1date is not None:
+                    w1date = True
+                    dateLength = len(word1)
+                    pos = word1.rfind("-")
+                    if pos > 0:
+                        w1short = word1[:pos]
+                        short == True
+                        #print "short is: " + w1short
+
+                    pos = word1.rfind("/")
+                    
+                    if pos > 0:
+                        w1short = word1[:pos]
+                        #print "this is the date: " + word1
+                        #print w1short
+                
+                word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})',word1)
+                if word1date is not None:
+                    w1date = True
+                     
+                word1date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word1)
                 if word1date is not None:
                     w1date = True
                 
-                word1date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|'
-                                      r'may|june|july|august|september|october|november|december).(\d)', word1)
-                if word1date is not None:
-                    w1date = True
-                
-                word2date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?', word2)
+                word2date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?',word2)
                 if word2date is not None:
                     w2date = True
                 
-                word2date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|'
-                                      r'may|june|july|august|september|october|november|december).(\d)', word2)
+                word2date = re.search(r'(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|january|february|march|april|may|june|july|august|september|october|november|december).(\d)',word2)
                 if word2date is not None:
                     w2date = True
                 
@@ -530,24 +527,62 @@ def checkDateMatch(coref):
                 if word2 in days:
                     w2date = True
                 
-                if w1date and w2date:
+                if w1date == True and w2date == True:
                     if len(coref[i]) is 2:
                         coref[i].append(coref[j][0])
                         break
+                
+                found = False
+                inText = notref.lower().find(w1short.lower())
+
+                if inText > 0:
+                    found = True
+
+                if found == True:
+                    if len(coref[i]) is 2:
+                        match = notref[inText:inText+len(w1short)]
+                        coref.append(['D' + str(cnt), match])
+                        coref[i].append('D' + str(cnt))
+                        cnt = cnt + 1
+                        break
+                
+                
+                        
     return coref
+
+################################################################################
+#
+# Check Pronouns
+#
+# Parameters: coref data structure (see create coref)
+# Returns: Data structure with tagged references, their coref id and all ref id's
+# Notes: This matches different versions of pronouns that would refer to the same 
+#          person. I.E. he/his, he/him, etc.
+#
+################################################################################
 
 def checkPronouns(coref):
     cnt = 0
     pronouns = ["he","she","him","his","hers", "her","we","us","they","them","our","ours","our's","my","me","their","i",
-           "theirs","her's","that","it","himself","herself","one","someone","anyone","somebody","anybody","everybody"]
+           "theirs","her's","that","it","himself","herself","one","someone","anyone","somebody","anybody","everybody",
+               "myself","you","yourself"]
     pronounMatch = [["he","his","him","himself"],
                     ["she","her","her's","hers","herself"],
                     ["we","our","us","ourself","ourselves"],
                     ["they","them","their","themself","themselves"],
-                    ["someone","somebody","they"],
-                    ["everyone","everybody","they"],
+                    ["somebody","their"],
+                    ["someone","their"],
+                    ["everyone","they"],
+                    ["everybody", "they"],
                     ["my","me","i"],
-                    ["that","it","itself"]]
+                    ["i","myself"],
+                    ["me","myself"],
+                    ["that","it","itself"],
+                    ["you","yourself"],
+                   ["anybody","themself"],
+                   ["anyone","themself"],
+                   ["nobody","they"]]
+    
     for i in range(len(coref)):
         a = 0
         s = 1
