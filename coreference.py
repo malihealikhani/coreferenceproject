@@ -436,16 +436,6 @@ def addDefault(coref):
 #
 ################################################################################
 
-
-def checkNotTagged(coref,notref):
-
-    cnt = 1
-    skip = ['what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'am', 'is', 'are',
-            'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does',
-            'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until',
-            'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into',
-            'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down',
-            'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here',
 def checkNotTagged(coref,notref):
 
     cnt = 1
