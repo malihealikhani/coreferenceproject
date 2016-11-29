@@ -90,8 +90,6 @@ def coreference(f):
     for child in tree_root:
         notref+= str(child.tail)
     
-    notref = notref.lower()
-    
     # text = nltk.word_tokenize(notags)  # breaks up all the words into tokens and puts into a list
     # sentences = nltk.sent_tokenize(notags)  # breaks corpus into sentences
     # pos_tags = nltk.pos_tag(text)  # tags all the words in the corpus
@@ -131,8 +129,9 @@ def coreference(f):
     #coref = checkDateMatch(coref)
     #coref = addDefault(coref)
     
-    #Order 2 has accuracy of 0.6259
+    #Order 2 has accuracy of 0.6364
     coref = checkExactMatch(coref)
+    coref= checkPronouns(coref)
     coref = checkAcronym(coref)
     coref = checkPartialMatch(coref)
     coref = checkExactMatchNoS(coref)
@@ -163,7 +162,7 @@ def create_coref(root):
         if "\n" in text:
             text = text[:text.index("\n")] + " " + text[text.index("\n")+1:]
 
-        coref.append([str(child.get('ID')), text.lower()])
+        coref.append([str(child.get('ID')), text])
     return coref
 
 
@@ -182,7 +181,7 @@ def create_coref(root):
 def checkExactMatch(coref):
     cnt = 0
     for i in range(len(coref)):
-        word1 = coref[i][1]
+        word1 = coref[i][1].lower()
         a = 0
         # s = 1
         for j in range(len(coref)):
@@ -200,7 +199,7 @@ def checkExactMatch(coref):
                 k = i + (a*-1)
                 a += 1
 
-            word2 = coref[k][1]
+            word2 = coref[k][1].lower()
             
             if word1 == word2 and coref[i][0] != coref[k][0]:
                 if len(coref[i]) is 2:
@@ -253,8 +252,8 @@ def checkExactMatchNoS(coref):
                 k = i + (a*-1)
                 a += 1
 
-            word1 = coref[i][1]
-            word2 = coref[k][1]
+            word1 = coref[i][1].lower()
+            word2 = coref[k][1].lower()
             
             # If the coref ends in 's, remove it before the comparison
             if word1[-2:] == "'s":
@@ -316,19 +315,19 @@ def checkAcronym(coref):
                     if len(coref[j][1].split(" ")) is len(coref[i][1]):
                         for word in coref[j][1].split():
                             if word.lower() not in skip:
-                                acr1 += word[0]
-                            acr2 += word[0]
-                        if acr1 == coref[i][1] or acr2 == coref[i][1]:
+                                acr1 += word[0].lower()
+                            acr2 += word[0].lower()
+                        if acr1 == coref[i][1].lower() or acr2 == coref[i][1].lower():
                             if coref[i][0] != coref[j][0]:
                                 coref[i].append(coref[j][0])
             # This finds acronyms from references (Federal Aviation Administration finds FAA)
             else:
                 for word in coref[i][1].split():
                     if word.lower() not in skip:
-                        acr1 += word[0]
-                    acr2 += word[0]
+                        acr1 += word[0].lower()
+                    acr2 += word[0].lower()
                 for j in range(len(coref)):  # for j in range(i, -1, -1):
-                    if coref[j][1] == acr1 or coref[j][1] == acr2:
+                    if coref[j][1].lower() == acr1 or coref[j][1].lower() == acr2:
                         coref[i].append(coref[j][0])
     return coref
 
@@ -390,9 +389,9 @@ def checkPartialMatch(coref):
                     # for each word in word1
                     for word1 in words1:
                         # only proceed if word is not a stopword
-                        if not(word1 in stopwords):
+                        if not(word1.lower() in stopwords):
                             for word2 in words2:
-                                if word1 == word2:
+                                if word1.lower() == word2.lower():
                                     if len(coref[i]) == 2 and coref[i][0] != coref[k][0]:
                                         coref[i].append(coref[k][0])
     return coref
@@ -461,8 +460,8 @@ def checkNotTagged(coref,notref):
             if len(words) > 1:
                 for word in words:
                     #print "word is: " + word
-                    if not (word in skip):
-                        inText = notref.find(word)
+                    if not (word.lower() in skip):
+                        inText = notref.lower.find(word.lower())
 
                         if inText > 0:
                             found = True
@@ -473,11 +472,13 @@ def checkNotTagged(coref,notref):
                     cnt = cnt + 1
             else:
                 #print "just one word and it is: " + words
-                if not (words in skip):
-                        inText = notref.find(words[0])
+                word1 = words[0]
+                word2 = words[0].lower()
+                if not (word2 in skip):
+                        inText = notref.lower().find(word2)
 
                         if inText > 0:
-                            coref.append(['X' + str(cnt), words[0]])
+                            coref.append(['X' + str(cnt), word1])
                             coref[i].append('X' + str(cnt))
                             cnt = cnt + 1
 
@@ -503,8 +504,8 @@ def checkDateMatch(coref):
             if i != j:
                 w1date = False
                 w2date = False
-                word1 = coref[i][1]
-                word2 = coref[j][1]
+                word1 = coref[i][1].lower()
+                word2 = coref[j][1].lower()
                 
                 word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})([/.-](\d{2,4}))?', word1)
                 if word1date is not None:
