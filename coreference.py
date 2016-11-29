@@ -219,6 +219,7 @@ def checkUntagged(coref, unedited):
                 cnt += 1
     return coref
 
+
 ################################################################################
 #
 # Check Exact Match no 's
@@ -280,6 +281,7 @@ def checkExactMatchNoS(coref):
 # Notes:
 #
 ################################################################################
+
 
 def check_appositive(coref):
     for i in range(len(coref)):
@@ -344,6 +346,7 @@ def checkAcronym(coref):
 #
 ################################################################################
 
+
 def checkPartialMatch(coref):
     #from nltk.corpus import stopwords
     stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours',
@@ -395,6 +398,7 @@ def checkPartialMatch(coref):
                                         coref[i].append(coref[k][0])
     return coref
 
+
 ################################################################################
 #
 # Add Default
@@ -417,6 +421,7 @@ def addDefault(coref):
                     coref[i].append(j)
     return coref
 
+
 ################################################################################
 #
 # Check Not Tagged
@@ -427,6 +432,7 @@ def addDefault(coref):
 #            
 #
 ################################################################################
+
 
 def checkNotTagged(coref,notref):
 
@@ -464,6 +470,7 @@ def checkNotTagged(coref,notref):
 
     return coref
 
+
 ################################################################################
 #
 # Check Date Match
@@ -474,6 +481,7 @@ def checkNotTagged(coref,notref):
 #        regardless of whether they are the same date or not.    
 #
 ################################################################################
+
 
 def checkDateMatch(coref,notref):
     days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday", "today", "tomorrow","yesterday"]
@@ -496,14 +504,16 @@ def checkDateMatch(coref,notref):
                     if pos > 0:
                         w1short = word1[:pos]
                         short == True
-                        #print "short is: " + w1short
 
                     pos = word1.rfind("/")
                     
                     if pos > 0:
                         w1short = word1[:pos]
-                        #print "this is the date: " + word1
-                        #print w1short
+                    
+                    pos = word1.rfind("-")
+                    
+                    if pos > 0:
+                        w1short = word1[:pos]
                 
                 word1date = re.search(r'(\d{1,2})[/.-](\d{1,2})',word1)
                 if word1date is not None:
@@ -545,10 +555,9 @@ def checkDateMatch(coref,notref):
                         coref[i].append('D' + str(cnt))
                         cnt = cnt + 1
                         break
-                
-                
-                        
+                   
     return coref
+
 
 ################################################################################
 #
@@ -560,6 +569,7 @@ def checkDateMatch(coref,notref):
 #          person. I.E. he/his, he/him, etc.
 #
 ################################################################################
+
 
 def checkPronouns(coref):
     cnt = 0
@@ -616,8 +626,9 @@ def checkPronouns(coref):
                                 cnt += 1
                                 break
 
-            
     return coref
+
+
 
 # Execution script
 if __name__ == "__main__":
