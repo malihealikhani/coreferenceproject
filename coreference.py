@@ -537,6 +537,54 @@ def checkDateMatch(coref):
                         break
     return coref
 
+def checkPronouns(coref):
+    cnt = 0
+    pronouns = ["he","she","him","his","hers", "her","we","us","they","them","our","ours","our's","my","me","their","i",
+           "theirs","her's","that","it","himself","herself","one","someone","anyone","somebody","anybody","everybody"]
+    pronounMatch = [["he","his","him","himself"],
+                    ["she","her","her's","hers","herself"],
+                    ["we","our","us","ourself","ourselves"],
+                    ["they","them","their","themself","themselves"],
+                    ["someone","somebody","they"],
+                    ["everyone","everybody","they"],
+                    ["my","me","i"],
+                    ["that","it","itself"]]
+    for i in range(len(coref)):
+        a = 0
+        s = 1
+        
+        for j in range(len(coref)):  #for j in range(i, -1, -1):
+
+            if (i - a) < 0:
+                k = i + a
+                a = a + 1
+            else:
+
+                if j % 2 == 0:
+                    k = i + a
+                    a = a + 1
+                else:
+                    k = i + (a*-1)
+
+            if k > (len(coref) -1):
+                k = i + (a*-1)
+                a = a + 1
+
+            word1 = coref[i][1].lower()
+            word2 = coref[k][1].lower()
+            
+            if word1 != word2:
+                if word1 in pronouns and word2 in pronouns:
+                    for group in pronounMatch:
+                        if word1 in group and word2 in group:
+                            if len(coref[i]) is 2:
+                                coref[i].append(coref[k][0])
+                                cnt += 1
+                                break
+
+            
+    return coref
+
 # Execution script
 if __name__ == "__main__":
     main(sys.argv[1:])
