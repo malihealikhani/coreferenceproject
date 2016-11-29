@@ -7,7 +7,7 @@ coreference.py
 
 I used lab1-5 to do my testing.
 
-We use 9 passes through the data and can achieve 63.64% score with all of the data that we have been given. We wrote all the code; no external algorithms were used.
+We use 9 passes through the data and can achieve 65.15% score with all of the data that we have been given. We wrote all the code; no external algorithms were used.
  - First pass matches NP's exactly
  - Second pass matches related pronouns that are used together (he/his,we/our,etc) 
  - Third pass matches acronyms
